@@ -1,0 +1,147 @@
+.block-cta{
+  height: 60vh;
+  min-height: 35em;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  .cta-curve-top{
+    max-width: none;
+    width: 101%;
+    margin: 0;
+    margin-left: -1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1999;
+    opacity: .8;
+  }
+  .cta-curve-bottom{
+    max-width: none;
+    width: 101%;
+    margin: 0;
+    margin-left: -1%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1999;
+    opacity: .8;
+  }
+  .cta-image{
+    height: 60vh;
+    min-height: 35em;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  .img-overlay{
+    height: 60vh;
+    min-height: 35em;
+    width: 100%;
+    position: absolute;
+    background: $color-black;
+    opacity: .5;
+
+  }
+  .cta{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cta-content{
+      flex-basis: 100%;
+      padding: $spacing-unit;
+      text-align: center;
+      @media(min-width: $tablet) {
+        padding: 4em;
+        flex-basis: 60%;
+      }
+      h2{
+      font-size: 2rem;
+      letter-spacing: .3rem;
+      margin-bottom: $spacing-unit / 2;
+      line-height: 1;
+      font-family: $header-font-family;
+      color: $color-white;
+      text-transform: uppercase;
+      text-shadow: $text-shadow;
+        @media(min-width: $laptop) {
+          font-size: 4rem;
+        }
+      @include fadeIn(
+        $delay: 1.4s,
+        $duration: .6s
+      );
+      }
+      h3{
+        font-size: 1.1rem;
+        font-family: $alt-font-family;
+        color: $color-white;
+        margin-bottom: $spacing-unit / 2;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-weight: 600;
+        text-shadow: $text-shadow;
+        @include fadeIn(
+          $delay: 1.7s,
+          $duration: .8s
+        );
+        @media(min-width: $laptop)  {
+          letter-spacing: .3rem;
+          font-size: 1.2rem; 
+        }
+      }
+      p{
+        font-size: 1rem;
+        color: $color-white;
+        text-shadow: 0 1px 1px rgba($color-black, .2);
+        margin-bottom: $spacing-unit;
+        @media(min-width: $laptop) {
+          font-size: 1.2rem;
+        }
+        @include fadeIn(
+          $delay: 2s,
+          $duration: 1s
+        );
+      }
+      .cta-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        @media(min-width: $laptop) {
+          flex-direction: row;
+        }
+        a{
+          color: $color-white;
+          margin-bottom: $spacing-unit / 2;
+          z-index: 1;
+        svg{
+          width: 1em;
+          height: 1em;
+          margin-top: .5em;
+          path{
+            fill: $color-white;
+            }
+          }
+        }
+      }
+      .button{
+        margin: 0;
+        margin-right: $spacing-unit / 2;
+        @include fadeInUp(
+          $delay: 2.6s,
+          $duration: 1s
+        );
+
+        &:hover{
+          span{
+          margin-right: 0;
+        }
+        }
+      }
+    }
+  }
+}

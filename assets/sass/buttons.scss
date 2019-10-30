@@ -1,0 +1,67 @@
+button{
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+button:focus {
+    outline: none;
+    outline-offset: -4px;
+}
+
+.button,a.button {
+  background: $color-brand;
+  display: inline-block;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: $spacing-unit / 2;
+  margin-left: 0;
+  padding: 1em 2em;
+  text-decoration: none;
+  z-index: 1;
+  text-align: center;
+  color: $color-brand;
+  font-size: inherit;
+  font-weight: 600;
+  position: relative;
+  vertical-align: middle;
+  transition: all .2s ease-out;
+  span{
+    color: $color-brand-alt;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  &:hover{
+    background: lighten($color-black, 5%);
+  }
+  &.alt{
+  background: $color-brand;
+    span{
+      color: $color-black;
+    }
+    &:hover{
+      background: darken($color-brand, 5%);
+    }
+  }
+  &.button.border{
+    background: $color-transparent;
+    &:hover{
+      background: $color-black;
+      span{
+        color: $color-brand;
+      }
+
+    }
+    span{
+      color: $color-black;
+    }
+  }
+}

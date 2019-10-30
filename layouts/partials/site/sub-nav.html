@@ -1,0 +1,28 @@
+{{ $currentpage := .Page.RelPermalink }}
+{{ if or .IsNode .Pages }}
+<nav class="sub-nav">
+  <ul>
+    <li>
+      <a href="{{ .RelPermalink }}" class="sub-nav-title {{if eq $currentpage .RelPermalink }}active{{ end }}">{{ .Title }}</a>
+    </li>
+    {{ range sort (where .Paginator.Pages "Params.hidden" "!=" "true") "Params.order" "desc" }}
+    <li class="sub-nav-item">
+      <a href="{{ .RelPermalink }}"{{if eq $currentpage .RelPermalink }}class="active"{{ end }}>{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ else if (ne .Parent.Kind "home") }}
+<nav class="sub-nav">
+  <ul>
+    <li>
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+    </li>
+    {{ range sort (where .Parent.Paginator.Pages "Params.hidden" "!=" "true") "Params.order" "desc" }}
+    <li>
+      <a href="{{ .RelPermalink }}"class="sub-nav-title {{if eq $currentpage .RelPermalink }}active{{ end }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}

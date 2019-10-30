@@ -1,0 +1,27 @@
+Related
+{{ $currentPage := . }}
+{{ $currentPage }}
+{{ with .Site.GetPage "blog" }}
+{{ range .Data.Pages.Related $currentPage | first 1}}
+<section class="block-container block-container-wide">
+  <div class="block-cta">
+    {{ with .Params.image }}
+    {{ $image := (resources.Get . ).Fill "1800x1000 top" }}
+    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
+    <img class="cta-image lazyload" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    <div class="img-overlay"></div>
+    {{ end }}
+    <div class="cta">
+      <div class="cta-content">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Description }}</p>
+            <div class="cta-links">
+                <a href=".RelPermalink" class="button alt"><span>Read More</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

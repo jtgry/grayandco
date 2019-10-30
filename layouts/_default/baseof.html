@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  <head>
+    {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+
+    <title>
+      {{- block "title" . -}}
+        {{- if .IsHome -}}
+          {{ .Site.Title }} | Alabama Wedding Photography
+        {{- else -}}
+        {{- with .Title -}}{{ . }} | {{ end }}{{ .Site.Title }}
+        {{ end }}
+      {{- end -}}
+    </title>
+
+    {{ range .AlternativeOutputFormats }}
+        <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+    {{ end }}
+
+    {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+
+  </head>
+    {{ block "site/google" . }}{{ partial "site/google.html" . }}{{ end }}
+  <body id="root">
+    {{ block "alert" . }}{{ partial "site/alert.html" . }}{{ end }}
+    {{ block "nav" . }}{{ partial "site/nav.html" . }}{{ end }}
+    {{ block "mobile-nav" . }}{{ partial "site/mobile-nav.html" . }}{{ end }}
+    {{ if eq .Site.Params.Search true }}
+    {{ block "search" . }}{{ partial "site/search.html" . }}{{ end }}
+    {{ end }}
+    <main id="page" class="site-main" role="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ block "site/footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+    {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+  </body>
+</html>

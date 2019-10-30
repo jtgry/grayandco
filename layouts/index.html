@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+  <article>
+  {{- range .Params.blocks -}}
+  {{- if eq .template "block-image" -}}{{ partial "blocks/block-image" (dict "Params" .) }}{{- end -}}
+  {{- if eq .template "block-features" -}}{{ partial "blocks/block-features" (dict "Params" .) }}{{- end -}}
+  {{- if eq .template "block-showcase" -}}{{ partial "blocks/block-showcase" (dict "Params" .) }}{{- end -}}
+  {{- if eq .template "block-cta" -}}{{ partial "blocks/block-cta" (dict "Params" .) }}{{- end -}}
+  {{- if eq .template "block-content" -}}{{ partial "blocks/block-content" (dict "Params" .) }}{{- end -}}
+  {{- if eq .template "block-gallery" -}}{{ partial "blocks/block-gallery" (dict "Params" .) }}{{- end -}}
+  {{- end -}}
+  </article>
+{{ end }}

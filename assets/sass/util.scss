@@ -1,0 +1,262 @@
+.shadow-sm{
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 30px;
+}
+.shadow-lg{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px;
+}
+
+.rounded-sm{
+  border-radius: 3px;
+}
+.rounded-lg{
+  border-radius: 3em;
+}
+
+//Padding
+.py1{
+  padding: $spacing-unit / 2 0;
+}
+.py2{
+  padding: $spacing-unit 0;
+}
+.py3{
+  padding: $spacing-unit * 1;
+}
+
+.px1{
+  padding: 0 $spacing-unit / 2;
+}
+.px2{
+  padding: 0 $spacing-unit 0;
+}
+.px3{
+  padding: 0 $spacing-unit * 1;
+}
+
+//Margin
+.mt1{
+  margin-top: $spacing-unit / 2;
+}
+.mt2{
+  margin-top: $spacing-unit;
+}
+.mt3{
+  margin-top: $spacing-unit * 1;
+}
+.mb1{
+  margin-bottom: $spacing-unit / 2;
+}
+.mb2{
+  margin-bottom: $spacing-unit;
+}
+.mb3{
+  margin-bottom: $spacing-unit * 1.5;
+}
+
+.overflow-hide{
+  overflow: hidden;
+}
+
+.image-top{
+  object-position: 50% 0;
+}
+
+.image-middle{
+  object-position: 50% 25%;
+}
+
+.image-bottom{
+  object-position: 50% 50%;
+}
+.text-small{
+  p,li,ol{
+    font-size: .8rem;
+  }
+}
+.text-center{
+  text-align: center;
+}
+.fixed{
+  position: fixed;
+}
+
+.visible{
+  visibility: visible;
+  display: block;
+}
+.hidden{
+  visibility: hidden;
+  display: none;
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+.lazyload{
+  opacity: 1;
+  transition: opacity 1s ease-out;
+
+}
+.lazyload:not(.loaded) {
+  opacity: .7;
+
+}
+
+.scroll-to-top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: $spacing-unit;
+  padding: 0 .5em 1em;
+  background: $color-black;
+  line-height: 0;
+  color: $color-brand;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: $height-top;
+  .svg-icon{
+    width: 2em;
+    height: 2em;
+    transform: rotate(270deg);
+  }
+}
+
+.skip-to-content{
+  display: none;
+}
+a > * {
+  pointer-events: none;
+}
+button > * {
+  pointer-events: none;
+}
+
+.alert-on{
+  margin-top: 3em;
+  @media(min-width: $laptop){
+    margin-top: 2.5em;
+  }  
+}
+.alert{
+  color: red;
+}
+
+.color-brand{
+  color: $color-brand;
+}
+.color-black{
+  color: $color-black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    body{
+      background: $color-black;
+    }
+    p,li,ol,a,h1,h2,h3,h4,h5,h6,input,select,textarea,label{
+      color: $color-brand;
+    }
+    a{
+      &:hover{
+      span{
+        box-shadow: inset 0 -.15em $color-brand;
+        }
+      }
+    }
+    a.link > svg > path{
+      fill: $color-brand;
+    }
+    .modal-full{
+      background: $color-black;
+    }
+    .main-nav > ul > li > a.nav-item{
+      color: $color-brand;
+      &.active{
+        box-shadow: inset 0 -.4em $color-brand;
+      }
+    }
+    .main-nav{
+      svg{
+        path{
+          fill: $color-brand;
+        }
+      }
+      .hamburger{
+        background: unset;
+        color: $color-brand;
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+          background-color: $color-brand;
+        }
+      }
+    }
+    button,a.button{
+      background: $color-brand;
+      color: $color-brand-alt;
+      span{
+        color: $color-brand-alt;
+        box-shadow: unset;
+      }
+      &:hover{
+        background: darken($color-brand, 5%);
+      }
+    }
+    .baguetteBox-button{
+      background-color: #323232;
+      background-color: rgba(50, 50, 50, 0.5);
+      color: #ddd;
+      &:hover, &:focus{
+        background-color: rgba(50, 50, 50, 0.9); 
+      }
+    }
+    .scroll-to-top{
+      background: $color-brand;
+      color: $color-black;
+      svg{
+        path{
+          fill: $color-black;
+        }
+      }
+    }
+    input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
+      border-bottom: 2px solid $color-brand;
+    }
+    input.form-control:focus {
+      border-bottom: 2px solid $color-brand;
+    }
+    input.form-control:active {
+      border-bottom: 2px solid $color-brand;
+    }
+    textarea.form-control:focus {
+      border-bottom: 2px solid $color-brand;
+    }
+    textarea.form-control:active {
+      border-bottom: 2px solid $color-brand;
+    }
+    .radio-button-group{
+      .radio-button-container{
+        .radio-tile{
+          border: 2px solid $color-brand;
+          color: $color-brand;
+        }
+        .radio-button{
+          &:checked + .radio-tile{
+            background: $color-brand;
+            color: $color-black;
+            transform: scale(1.03, 1.03);
+            label{
+              color: $color-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: $color-brand;
+  }
+}

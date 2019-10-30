@@ -1,0 +1,17 @@
+<header>
+  <div class="hero page-hero">
+    {{ $imagePosition := "image-bottom"}}
+    {{ with .Params.image_position }}
+      {{ $imagePosition = . }}
+    {{ end }}
+    {{ with .Params.image }}
+    {{ $image := (resources.Get . ).Resize "2500x" }}
+    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
+    <img class="lazyload {{$imagePosition}}" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    {{ else }}
+    <img class="" src="/images/placeholder.jpg" data-object-fit="cover" alt="{{ $.Title }}">
+    {{ end }}
+    <div class="img-overlay"></div>
+    </div>
+  </div>
+</header>

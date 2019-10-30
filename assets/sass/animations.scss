@@ -1,0 +1,6 @@
+.fade-in{
+  @include fadeIn(
+    $delay: .6s,
+    $duration: .6s
+  );
+}

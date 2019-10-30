@@ -1,0 +1,21 @@
+<div id="mobileNav" class="modal-full">
+  <div class="modal-content">
+    <nav class="mobile-nav">
+      <ul>
+      {{ range .Site.Menus.main.ByWeight }}
+        <li>
+          <a href="{{ .URL }}" class="mobile-nav-item">{{ .Name }}</a>
+        </li>
+      {{ end }} 
+        <li>
+          <a href="/inquiries" class="nav-item button"><span>Contact</span></a>
+        </li> 
+      </ul>
+      <div class="mobile-nav-buttons">
+        {{ range .Site.Menus.footer }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+</div>

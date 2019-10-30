@@ -1,0 +1,52 @@
+.modal-full{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow-y: auto;
+  visibility: hidden;
+  background: $color-brand;
+  z-index: $height-high;
+  display: none;
+  justify-content: center;
+  @include fadeOut(
+      $delay: .5s,
+      $duration: .6s
+  );
+
+  &.active{
+    visibility: visible;
+    display: flex;
+    @include fadeIn(
+      $delay: .01s,
+      $duration: .5s
+    );
+  }
+  .modal-content{
+    max-height: 100%;
+    width: 94%;
+    margin: 0 3%;
+    margin-top: $spacing-unit * 3;
+    max-width: $content-width;
+    @media(min-width: $laptop){
+      margin-top: 0;
+    }
+  }
+}
+.modal-close{
+  position: absolute;
+  margin: $spacing-unit / 2;
+  top: 0;
+  right: 0;
+  z-index: $height-top;
+  display: none;
+  .svg-icon{
+    width: 2em;
+    height: 2em;
+    path{
+    fill: $color-black;
+    }
+  }
+  &.active{
+    display: block;
+  }
+}

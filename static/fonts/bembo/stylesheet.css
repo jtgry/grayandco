@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Bembo Std';
+    src: url('BemboStd.eot');
+    src: url('BemboStd.eot?#iefix') format('embedded-opentype'),
+        url('BemboStd.woff2') format('woff2'),
+        url('BemboStd.woff') format('woff'),
+        url('BemboStd.ttf') format('truetype'),
+        url('BemboStd.svg#BemboStd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

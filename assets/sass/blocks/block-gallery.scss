@@ -1,0 +1,11 @@
+.block-gallery{
+  @media(min-width: $tablet) {
+  columns: 3 200px;
+  column-gap: .5em;
+  margin-bottom: $spacing-unit;
+  }
+  img{
+    margin-bottom: .5em;
+    display: block;
+  }
+}

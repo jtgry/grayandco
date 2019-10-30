@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
+  <article>
+    <h1 class="page-title">{{ .Title }}</h1>
+      {{ range .Paginator.Pages.ByParam "order" }}
+      <section class="block-container">
+      <div class="block-wrapper">
+        <div class="block-image">
+          {{ $imagePosition := "image-middle"}}
+          {{ with .Params.image_position }}
+            {{ $imagePosition = . }}
+          {{ end }}
+          {{- with .Params.image -}}
+            {{ $image := (resources.Get .).Resize "800x" }}
+            {{ $imageThumbnail := $image.Resize "100x q25" | images.Filter (images.GaussianBlur 3) }}
+            <img class="lazyload {{$imagePosition}} portrait" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{- with $.Params.heading -}}{{ . }}{{ end }}">
+          {{ end }}
+        </div>
+        <div class="block-content">
+          <div class="container">
+            {{- with .Title -}}
+            <hr />
+            <h3 class="block-feature-heading">{{ markdownify . }}</h3>
+            {{ end }}
+            {{- with .Params.description -}}
+            <p>{{ markdownify . }}</p>
+            {{- end -}}
+            <a href="{{ .URL }}" class="button">Learn More</a>
+
+          </div>
+        </div>
+      </div>
+      </section>
+      {{ end }}
+  </article>
+{{ end }}

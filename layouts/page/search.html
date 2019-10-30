@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
+{{ block "sub-nav" . }}{{ partial "site/sub-nav.html" . }}{{ end }}
+  <article class="block-container">
+    <div class="block-header">
+      {{ block "breadcrumbs" . }}{{ partial "site/breadcrumbs.html" . }}{{ end }}
+      <div class="container">
+        {{ with .Params.subheading }}
+        <hr />
+        <h2>{{ markdownify . }}</h2>
+        {{ end }}
+        {{ with .Params.heading }}
+        <h3>{{ markdownify . }}</h3>
+        {{ end }}
+        {{- with .Params.content -}}
+          <p>{{ markdownify . }}</p>
+        {{- end -}}
+        
+        <div>
+          <input id="search-input" type="text" placeholder="What are you looking for?" name="search-input" class="form-control">
+        </div>
+        <div id="search-results" class="container"></div>
+      </div>
+    </div>
+  </article>
+{{ end }}

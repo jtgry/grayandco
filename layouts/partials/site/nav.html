@@ -1,0 +1,54 @@
+<a class="skip-to-content" href="#page">Skip navigation</a>
+<nav class="main-nav">
+  <a href="/" class="nav-logo" alt="{{ .Site.Title }} Home"/>
+    {{ readFile "/static/images/logo-horizontal.svg" | safeHTML }}
+    <svg class="mobile-logo" src="/images/logo-badge.svg"/>
+  </a>
+  <a href="/" class="mobile-logo" alt="{{ .Site.Title }} Home"/>
+    {{ readFile "/static/images/logo-badge.svg" | safeHTML }}
+  </a>
+  <ul class="nav-items">
+  {{ $currentPage := . }}
+  
+  {{ range .Site.Menus.main.ByWeight }}
+    <li>
+      <a href="{{ .URL }}" class="nav-item {{ if eq $currentPage.URL .URL }}active{{ end }}">{{ .Name }}</a>
+    </li>
+  {{ end }} 
+  {{ if eq .Site.Params.Search true }}
+    <li>
+      <button href="#search" id="searchButton" class="search">
+        <span>Search</span>
+        <svg class="svg-icon" viewBox="0 0 20 20">
+          <path fill="none" d="M19.129,18.164l-4.518-4.52c1.152-1.373,1.852-3.143,1.852-5.077c0-4.361-3.535-7.896-7.896-7.896
+            c-4.361,0-7.896,3.535-7.896,7.896s3.535,7.896,7.896,7.896c1.934,0,3.705-0.698,5.078-1.853l4.52,4.519
+            c0.266,0.268,0.699,0.268,0.965,0C19.396,18.863,19.396,18.431,19.129,18.164z M8.567,15.028c-3.568,0-6.461-2.893-6.461-6.461
+            s2.893-6.461,6.461-6.461c3.568,0,6.46,2.893,6.46,6.461S12.135,15.028,8.567,15.028z"></path>
+        </svg>
+      </button>
+    </li>
+    {{ end }}
+    <li>
+      <a href="/contact" class="nav-item button"><span>Contact</span></a>
+    </li>
+    <li class="mobile">
+      <button class="hamburger hamburger--squeeze" type="button" aria-label="Menu">
+        Menu
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </li>
+  </ul>
+</nav>
+  {{ .Scratch.Set "alert" "alert-off" }}
+  {{ with .Site.GetPage "/alerts" }}
+    {{ if eq .Params.alert true }}
+      {{ $.Scratch.Set "alert" "alert-on" }}
+    {{ end }}
+  {{ end }}
+<a href="#close-modal" class="modal-close">
+  <svg alt="" class="svg-icon" viewBox="0 0 20 20">
+    <path fill="none" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+  </svg>
+</a>

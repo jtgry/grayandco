@@ -1,0 +1,20 @@
+{{ $lazyload := resources.Get "js/vendor/lazyload.js" }}
+{{ $imagesloaded := resources.Get "js/vendor/imagesloaded.js" }}
+{{ $smoothscroll := resources.Get "js/vendor/smoothscroll.js" }}
+{{ $scrollreveal := resources.Get "js/vendor/scrollreveal.js" }}
+{{ $lunr := resources.Get "js/vendor/lunr.js" }}
+{{ $lunrsearch := resources.Get "js/search.js" }}
+{{ $baguette := resources.Get "js/vendor/baguetteBox.js" }}
+
+{{ $main := resources.Get "js/app.js" }}
+
+{{ $scripts := slice $lazyload $imagesloaded $smoothscroll $scrollreveal $baguette $main | resources.Concat "app.js" | minify | fingerprint }}
+
+{{ $search := slice $lunr $lunrsearch | resources.Concat "search.js" | minify | fingerprint }}
+
+
+<script src="{{ $scripts.Permalink }}"></script>
+
+{{ if eq .Site.Params.Search true }}
+<script src="{{ $search.Permalink }}" defer></script>
+{{ end }}

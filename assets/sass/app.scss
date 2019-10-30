@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Forum&display=swap');
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$alt-font-family: $base-font-family;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.6;
+
+$header-font-family: 'Forum', serif;
+$spacing-unit:     2rem;
+
+$color-white:      rgba(255,255,255,1);
+
+$content-width:    780px;
+$content-wide:     1200px;
+$phone:            400px;
+$tablet:           700px;
+$laptop:           1000px;
+$desktop:          1400px;
+
+$color-brand:      rgba(76, 83, 73, 1);
+$color-brand-alt:  rgba(234, 228, 221, 1);
+$color-white:      rgba(255,255,255,1);
+$color-black:      rgba(30,30,30,1);
+$color-off-white:  rgba(248,248,248,1);
+$color-transparent:rgba(0,0,0,0);
+$color-grey:       rgba(110,110,110,1);
+$color-grey-light: lighten($color-grey, 45%);
+$color-grey-dark:  darken($color-grey, 15%);
+
+$border-radius-soft: 3px;
+$border-radius-hard: 3em;
+$box-shadow-alt: rgba(0, 0, 0, 0.2) 0px 5px 20px;
+$box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 30px;
+$text-shadow: 0 1px 1px rgba($color-black, .2);
+
+$height-mid:        1000;
+$height-high:       1500;
+$height-top:        2000;
+
+@import
+  "animate/animate.scss",
+  "animations",
+  "hamburger/hamburgers.scss",
+  "normalize",
+  "layout",
+  "buttons",
+  "forms",
+  "nav",
+  "mobile-nav",
+  "sub-nav",
+  "header",
+  "footer",
+  "search",
+  "modal",
+  "icons",
+  "blocks",
+  "blocks/block-image",
+  "blocks/block-gallery",
+  "blocks/block-showcase",
+  "blocks/block-features",
+  "blocks/block-cta",
+  "baguette",
+  "util"
+;

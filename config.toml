@@ -1,0 +1,61 @@
+baseURL = "https://wearegray.co"
+disableAliases = true
+enableRobotsTXT = true
+languageCode = "en-us"
+metaDataFormat = "yaml"
+title = "Gray & Co"
+[imaging]
+anchor = "smart"
+quality = 90
+[mediaTypes."text/netlify"]
+delimiter = ""
+suffixes = [""]
+[[menu.footer]]
+identifier = "instagram"
+name = "Instagram"
+url = "https://instagram.com/laurenagrayphoto"
+weight = 1
+[[menu.footer]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 3
+[[menu.footer]]
+identifier = "facebook"
+name = "Facebook"
+url = "https://www.facebook.com/LaurenAGrayPhoto/"
+weight = 2
+[outputFormats.HEADERS]
+baseName = "_headers"
+isPlainText = true
+mediatype = "text/netlify"
+notAlternative = true
+[outputFormats.REDIRECTS]
+baseName = "_redirects"
+isPlainText = true
+mediatype = "text/netlify"
+notAlternative = true
+[outputFormats.SEARCH]
+baseName = "search"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+[outputs]
+home = ["HTML", "RSS", "REDIRECTS", "HEADERS", "SEARCH"]
+[params]
+disallow_search_engines = false
+image = ""
+search = false
+[related]
+includeNewer = true
+threshold = 80.0
+toLower = true
+[[related.indices]]
+name = "description"
+weight = 1
+[[related.indices]]
+name = "title"
+weight = 2
+[[related.indices]]
+name = "tags"
+weight = 3

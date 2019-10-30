@@ -1,0 +1,9 @@
+{{ with .Site.GetPage "/alerts" }}
+{{ if eq .Params.alert true }}
+  {{ range first 1 .Params.items }}
+    <section class="alert-banner">
+        <p><a href="{{ .link }}">{{ .heading }}</a></p>
+    </section> 
+  {{ end }}
+{{ end }}
+{{ end }}

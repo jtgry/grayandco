@@ -1,0 +1,194 @@
+
+body {
+  height: 100%;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+  letter-spacing: .01em;
+  color: $color-black;
+  line-height: $base-line-height;
+  background-color: $color-brand;
+  z-index: 1;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: “liga” on;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: normal;
+
+}
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: $base-font-weight;
+  line-height: 1.5;
+  margin-bottom: $spacing-unit / 2;
+  color: lighten($color-black, 10%);
+  font-family: $header-font-family;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.6rem;
+}
+h4{
+  font-size: 1.4rem;
+}
+h5{
+  font-size: 1.2rem;
+}
+h6{
+  font-size: 1rem;
+}
+ul{
+  margin-left: 1em;
+  @media(min-width: $laptop){
+    margin-left: 0;
+  }
+
+}
+p,li,ol{
+  font-size: 1rem;
+  color: $color-grey-dark;
+  @media(min-width: $laptop){
+    font-size: 1.4rem;
+  }
+}
+a{
+  font-weight: 500;
+  color: $color-black;
+  text-decoration: none;
+
+
+}
+.site-main{
+  a{
+    line-height: 1.1;
+    transition: all .3s ease-out;
+  }
+}
+hr {
+  border: 0;
+  height: .2em;
+  background: $color-grey;
+  width: 4em;
+  margin: 0 auto;
+  margin-bottom: $spacing-unit / 1;
+}
+
+img{
+  width: 100%;
+  max-width: 100%;
+  will-change: transform;
+}
+header{
+  width: 100%;
+}
+main{
+  
+}
+footer{
+
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: $spacing-unit;
+  tr{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid #f1f1f1;
+    th{
+      text-align: left;
+      display: flex;
+      flex-flow: row nowrap;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: $spacing-unit / 3;
+    }
+    td{
+      display: flex;
+      flex-flow: row nowrap;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: $spacing-unit / 3;
+      font-size: .9rem;
+      font-weight: 500;
+      word-break: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &:first-child {
+      background-color: $color-grey-light;
+    }
+
+  }
+
+}
+.container{
+  width: 100%;
+  max-width: $content-width;
+  @media(min-width: $laptop) {
+    margin: 0 auto;
+  }
+}
+.page-title{
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  margin-top: $spacing-unit;
+  @media(min-width: $laptop) {
+    font-size: 5rem;
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+  }
+}
+.page-content{
+  width: 94%;
+  margin: 0 3%;
+  max-width: $content-width;
+  padding: $spacing-unit / 2 0;
+  
+  @media(min-width: $laptop) {
+    margin: 0 auto;
+  }
+}
+.alert-banner{
+  width: 100%;
+  position: relative;
+  display: flex;
+  background: $color-black;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  padding: 0 $spacing-unit;
+  text-align: center;
+  @media(min-width: $laptop){
+    height: 2.5em;
+  }
+  p,a{
+    font-size: .8rem;
+    font-weight: 600;
+    color: $color-white;
+    margin: 0;
+    text-decoration: none;
+  }
+
+}

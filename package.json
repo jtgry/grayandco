@@ -1,0 +1,16 @@
+{
+  "name": "hugo",
+  "private": true,
+  "scripts": {
+    "build": "hugo --minify",
+    "build:preview": "hugo --buildFuture",
+    "start": "hugo server",
+    "server": "hugo server",
+    "server:with-drafts": "hugo server --buildFuture"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "netlify-lambda": "^1.5.1",
+    "postcss-cli": "^6.1.3"
+  }
+}

@@ -1,0 +1,185 @@
+form{
+  display: block;
+  margin: $spacing-unit 0;
+  text-align: center;
+  .form-content{
+    margin-bottom: $spacing-unit;
+  }
+  button{
+    width: 15em;
+    margin: auto 0;
+  }
+  small{ 
+    display: block;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    font-size: .8rem;
+    margin-bottom-bottom: $spacing-unit / 2;
+    margin-left: 1em;
+  }
+}
+
+input, select, textarea{
+  color: $color-black;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+  outline: none;
+}
+.input-group{
+  margin-bottom: $spacing-unit / 2;
+}
+
+label.form-label {
+  font-family: $alt-font-family;
+  color: $color-black;
+  font-weight: 700;
+  font-size: .8rem;
+  float: left;
+  width: 100%;
+  display: inline-block;
+  margin-left: 1em;
+  text-align: left;
+}
+input.form-control {
+  font-family: $base-font-family;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+  border: 2px solid $color-grey;
+  transition: all .2s ease-in-out;
+  padding: .5em;
+  margin-bottom: $spacing-unit / 2;
+  background: transparent;
+}
+select.form-control {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+  appearance: none;
+  font-family: $base-font-family;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+  border: 2px solid $color-grey;
+  transition: all .2s ease-in-out;
+  padding: .5em;
+  margin-bottom: $spacing-unit / 2;
+  background: transparent;
+
+}
+select option{
+    font-size: 1.5rem;
+
+}
+textarea.form-control{
+  font-family: $base-font-family;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+  border: 2px solid $color-grey;
+  transition: all .2s ease-in-out;
+  margin-bottom: $spacing-unit / 2;
+  background: transparent;
+}
+input.field:focus {
+  border:none;
+}
+
+input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    border-bottom: 2px solid $color-black;
+}
+input.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid $color-black;
+}
+input.form-control:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid $color-black;
+}
+textarea.form-control:focus {
+  height: 7em;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid $color-black;
+}
+textarea.form-control:active {
+  height: 7em;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid $color-black;
+}
+
+input[type=checkbox],input[type=radio] {
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+}
+.form-section{
+  margin-bottom: $spacing-unit;
+}
+.form-title{
+  font-family: $alt-font-family;
+  color: $color-black;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: $spacing-unit;
+  display: flex;
+  justify-content: center;
+}
+.radio-button-group{
+  justify-content: flex-start;
+  margin-bottom: $spacing-unit / 2;
+  @media(min-width: $tablet){
+    display: flex;
+  }
+  .radio-button-container{
+    width: 100%;
+    margin-bottom: $spacing-unit;
+    @media(min-width: $tablet){
+      margin-right: $spacing-unit;  
+    }
+    position: relative;
+    .radio-tile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $color-black;
+      padding: 1em;
+      transition: transform 300ms ease;
+    }
+    .radio-button{
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      cursor: pointer;
+      &:checked + .radio-tile{
+        background: $color-black;
+        color: $color-brand;
+        transform: scale(1.03, 1.03);
+      }
+    }
+    .radio-label{
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+  } 
+}
+

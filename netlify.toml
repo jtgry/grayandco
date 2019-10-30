@@ -1,0 +1,14 @@
+[build]
+    command = "npm run build"
+    publish = "public"
+    functions = "functions"
+
+[build.environment]
+    HUGO_VERSION = "0.58.3"
+
+[context.production.environment]
+    HUGO_ENV = "production"
+    NODE_ENV = "production"
+
+[context.deploy-preview]
+    command = "npm run build:preview"

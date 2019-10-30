@@ -1,0 +1,37 @@
+
+{{ define "main" }}
+{{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
+{{ block "sub-nav" . }}{{ partial "site/sub-nav.html" . }}{{ end }}
+  <article>
+    <section class="block-container">
+      {{ block "breadcrumbs" . }}{{ partial "site/breadcrumbs.html" . }}{{ end }}
+      <div class="block-header">
+        <div class="container">
+          {{ with .Params.subheading }}
+          <hr />
+          <h2>{{ markdownify . }}</h2>
+          {{ end }}
+          {{ with .Params.heading }}
+          <h3>{{ markdownify . }}</h3>
+          {{ end }}
+          {{- with .Params.intro -}}
+            <p>{{ markdownify . }}</p>
+          {{- end -}}
+        </div>
+      </div>
+      <div class="container">
+        {{ range where .Site.Sections "Params.hidden" "!=" "true"}}
+          <h3>{{ .Title }}</h3>
+          {{ with .Data.Pages }}
+          <ul>
+          {{ range where . "Params.hidden" "!=" "true"}}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+          </ul>
+          {{ end }}
+        {{ end }}
+
+      </div>
+    </section>
+  </article>
+{{ end }}

@@ -1,0 +1,180 @@
+header{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .hero{
+    height: 90vh;
+    min-height: 10em;
+    width: 100%;
+    display: flex;
+    @media(min-width: $laptop) {
+      height: 95vh;
+      min-height: 30em;
+    }
+    &.page-hero{
+      height: 40vh;
+      min-height: 10em;
+      @media(min-width: $laptop) {
+        height: 70vh;
+        min-height: 30em;
+      }
+      img{
+        height: 40vh;
+        min-height: 10em;
+        @media(min-width: $laptop) {
+          height: 70vh;
+          min-height: 30em;
+        }
+      }
+      .img-overlay{
+        height: 40vh;
+        min-height: 10em;
+        @media(min-width: $laptop) {
+          height: 70vh;
+          min-height: 30em;
+        }
+      }
+      .cta{
+        .cta-content{
+          flex-basis: 100%;
+          text-align: center;
+          margin-left: 0;
+          h1{
+            font-size: 4rem;
+            @media(min-width: $laptop) {
+              font-size: 5rem;
+            }
+          }
+        }
+      }
+    }
+    img{
+      height: 90vh;
+      min-height: 10em;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      @media(min-width: $laptop) {
+        height: 95vh;
+        min-height: 30em;
+      }
+    }
+    .img-overlay{
+      height: 90vh;
+      min-height: 10em;
+      width: 100%;
+      position: absolute;
+      background: $color-brand-alt;
+      opacity: .9;
+      @media(min-width: $laptop) {
+        height: 95vh;
+        min-height: 30em;
+      }
+    }
+    .cta{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media(min-width: $laptop) {
+        justify-content: flex-start;
+      }
+      .cta-content{        
+        text-align: center;
+        position: relative;
+        padding: 1em;
+        flex-basis: 100%;
+        @media(min-width: $laptop) {
+          
+          padding: 4em;
+          flex-basis: 45em;
+          text-align: left;
+          margin-top: 5vh;
+        }
+        h1{
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+        margin-bottom: $spacing-unit / 2;
+        line-height: 1;
+        font-family: $header-font-family;
+        color: $color-brand;
+        text-transform: uppercase;
+        @media(min-width: $laptop) {
+          font-size: 4rem;
+        }
+        @include fadeIn(
+          $delay: 1s,
+          $duration: .6s
+        );
+        }
+        h2{
+          font-size: 1rem;
+          color: $color-brand;
+          margin-bottom: $spacing-unit / 2;
+          text-transform: uppercase;
+          letter-spacing: .4rem;
+          font-weight: 700;
+          @include fadeIn(
+            $delay: 1.2s,
+            $duration: .6s
+          );
+          @media(min-width: $laptop)  {
+            letter-spacing: .3rem;
+            font-size: 1.4rem; 
+          }
+        }
+        p{
+          font-size: 1.1rem;
+          color: $color-brand;
+          margin-bottom: $spacing-unit;
+          @include fadeIn(
+            $delay: 1.4s,
+            $duration: .6s
+          );
+        }
+ 
+        .cta-links{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          @media(min-width: $laptop) {
+            flex-direction: row;
+          }
+          a{
+            color: $color-brand;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: $spacing-unit / 2;
+          svg{
+            width: 1em;
+            height: 1em;
+            margin-top: .5em;
+            path{
+              fill: $color-brand;
+              }
+            }
+          }
+        }
+        .button{
+          margin: 0;
+          margin-right: $spacing-unit / 2;
+          span{
+            font-size: 1rem;
+          }
+          @include fadeInUp(
+            $delay: 1.6s,
+            $duration: .8s
+          );
+        }
+        .cta-more{
+          @include fadeInLeft(
+            $delay: 1.8s,
+            $duration: .8s
+          );
+        }
+      }
+    }
+  }
+}

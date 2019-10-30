@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
+  <article>
+    <h1 class="page-title">{{ .Title }}</h1>
+    <section class="block-container">
+      <div class="block-header">
+        <div class="container">
+          {{ with .Params.subheading }}
+          <hr />
+          <h2>{{ markdownify . }}</h2>
+          {{ end }}
+          {{ with .Params.heading }}
+          <h3>{{ markdownify . }}</h3>
+          {{ end }}
+          {{- with .Params.intro -}}
+            <p>{{ markdownify . }}</p>
+          {{- end -}}
+        </div>
+      </div>
+      <div class="page-content">
+        <form name="Contact Form" method="POST" data-netlify="true" action="/thankyou">
+          <div class="form-content">
+            <div class="form-section">
+              <div class="input-container">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="name" required>
+              </div>
+              <div class="input-container">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-control" type="email" id="email" name="email" required> 
+              </div>
+              <div class="input-container">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input class="form-control" type="phone" id="phone" name="phone">
+              </div>
+              <div class="input-container">
+                <label class="form-label" for="name">Significant Other's Name</label>
+                <input class="form-control" type="text" id="othername" name="othername">
+              </div>
+              <div class="input-container">
+                <label class="form-label" for="date">Event Date</label>
+                <input class="form-control" type="date" id="date" name="date">
+              </div>
+              <div class="input-container">
+                <label class="form-label" for="message">Tell me a little more about what you are looking for?</label>
+                <textarea class="form-control" id="message" name="message"></textarea>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3 class="form-title">Wanna grab a coffee and talk more?</h3>
+              <div class="radio-button-group">
+                <div class="radio-button-container">
+                  <input id="followUpYes" class="radio-button" type="radio" name="followUpYes" value="Yes! I love coffee!" />
+                  <div class="radio-tile">
+                    <label for="followUpYes" class="radio-label">Yes! I love coffee!</label>
+                  </div>
+                </div>
+                <div class="radio-button-container">
+                  <input id="followUpNo" class="radio-button" type="radio" name="followUpYes" value="Nah, not my thing" />
+                  <div class="radio-tile">
+                    <label for="followUpNo" class="radio-label">Nah, not my thing.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </div>
+            <div class="input-container">
+              <button class="button" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </article>
+{{ end }}

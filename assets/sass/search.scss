@@ -1,0 +1,30 @@
+#searchResults{
+  ul {
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        display: block;
+        box-shadow: $box-shadow-alt;
+        padding: $spacing-unit;
+        border-radius: 3px;
+        margin-bottom: $spacing-unit;
+        will-change: transform,filter;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: transform .3s ease-out;
+        -o-transition: transform .3s ease-out;
+        transition: transform .3s ease-out;
+        &:hover{
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+        box-shadow: $box-shadow;
+       }
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+}

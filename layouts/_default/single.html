@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
+  <article>
+    <div class="block-header">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{- with .Params.intro -}}
+      <p>{{ markdownify . }}</p>
+      {{ end }}
+      {{ with .Params.date }}
+      <h2>{{ .Format "January 2, 2006" }}</h2>
+      {{ end }}
+    </div>    
+    {{ with .Content }}
+    <section class="page-content">
+      {{ . }}
+    </section>
+    {{ end }}
+    {{- range .Params.blocks -}}
+    {{- if eq .template "block-image" -}}{{ partial "blocks/block-image" (dict "Params" .) }}{{- end -}}
+    {{- if eq .template "block-features" -}}{{ partial "blocks/block-features" (dict "Params" .) }}{{- end -}}
+    {{- if eq .template "block-showcase" -}}{{ partial "blocks/block-showcase" (dict "Params" .) }}{{- end -}}
+    {{- if eq .template "block-cta" -}}{{ partial "blocks/block-cta" (dict "Params" .) }}{{- end -}}
+    {{- if eq .template "block-content" -}}{{ partial "blocks/block-content" (dict "Params" .) }}{{- end -}}
+    {{- if eq .template "block-gallery" -}}{{ partial "blocks/block-gallery" (dict "Params" .) }}{{- end -}}
+    {{- if eq .template "block-related" -}}{{ partial "blocks/block-related" . }}{{- end -}}
+    {{- end -}}
+    
+  </article>
+{{ end }}
