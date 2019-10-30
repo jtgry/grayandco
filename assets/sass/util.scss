@@ -206,8 +206,9 @@ button > * {
     .baguetteBox-button{
       background-color: #323232;
       background-color: rgba(50, 50, 50, 0.5);
-      color: #ddd;
+      color: $color-brand;
       &:hover, &:focus{
+        color: $color-brand-alt;
         background-color: rgba(50, 50, 50, 0.9); 
       }
     }
