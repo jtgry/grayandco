@@ -8,7 +8,7 @@ header{
     width: 100%;
     display: flex;
     @media(min-width: $laptop) {
-      height: 95vh;
+      height: 70vh;
       min-height: 30em;
     }
     &.page-hero{
@@ -55,7 +55,7 @@ header{
       object-fit: cover;
       position: absolute;
       @media(min-width: $laptop) {
-        height: 95vh;
+        height: 70vh;
         min-height: 30em;
       }
     }
@@ -64,10 +64,10 @@ header{
       min-height: 10em;
       width: 100%;
       position: absolute;
-      background: $color-black;
-      opacity: .1;
+      background: $color-brand-alt;
+      opacity: 1;
       @media(min-width: $laptop) {
-        height: 95vh;
+        height: 70vh;
         min-height: 30em;
       }
     }
@@ -95,12 +95,12 @@ header{
         font-size: 2.5rem;
         letter-spacing: .2rem;
         margin-bottom: $spacing-unit / 2;
-        line-height: 1;
+        line-height: 1.2;
         font-family: $header-font-family;
-        color: $color-white;
+        color: $color-brand;
         text-transform: uppercase;
         @media(min-width: $laptop) {
-          font-size: 4rem;
+          font-size: 2rem;
         }
         @include fadeIn(
           $delay: 1s,
@@ -109,7 +109,7 @@ header{
         }
         h2{
           font-size: 1rem;
-          color: $color-white;
+          color: $color-brand;
           margin-bottom: $spacing-unit / 2;
           text-transform: uppercase;
           letter-spacing: .4rem;
@@ -125,7 +125,7 @@ header{
         }
         p{
           font-size: 1.1rem;
-          color: $color-white;
+          color: $color-brand;
           margin-bottom: $spacing-unit;
           @include fadeIn(
             $delay: 1.4s,

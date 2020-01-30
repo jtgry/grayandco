@@ -9,4 +9,7 @@ button_text: Let's Get Started!
 more_url: 
 more_text: 
 blocks:
+  - template: block-statement
+    heading: Gray & Co.
+    content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs. 
 ---

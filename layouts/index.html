@@ -8,6 +8,7 @@
   {{- if eq .template "block-cta" -}}{{ partial "blocks/block-cta" (dict "Params" .) }}{{- end -}}
   {{- if eq .template "block-content" -}}{{ partial "blocks/block-content" (dict "Params" .) }}{{- end -}}
   {{- if eq .template "block-gallery" -}}{{ partial "blocks/block-gallery" (dict "Params" .) }}{{- end -}}
+  {{- if eq .template "block-statement" -}}{{ partial "blocks/block-statement" (dict "Params" .) }}{{- end -}}
   {{- end -}}
   </article>
 {{ end }}

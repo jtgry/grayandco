@@ -1,0 +1,13 @@
+<section class="block-container">
+  <div class="block-header">
+    <div class="container">
+      {{ with .Params.heading }}
+      <hr />
+      <h2 class="text-bold">{{ markdownify . }}</h2>
+      {{ end }}
+      {{ with .Params.content }}
+      <p class="h2 header-font">{{ markdownify . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>

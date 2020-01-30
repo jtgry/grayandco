@@ -83,11 +83,13 @@ a{
 }
 hr {
   border: 0;
-  height: .2em;
-  background: $color-grey;
-  width: 4em;
+  height: 1px;
+  background: $color-brand-alt;
+  width: 2em;
   margin: 0 auto;
-  margin-bottom: $spacing-unit / 1;
+  margin-bottom: $spacing-unit * 1.4;
+  transform:rotate(90deg);
+
 }
 
 img{

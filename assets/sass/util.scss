@@ -1,3 +1,29 @@
+
+.h1{
+  font-size: 4rem !important;
+  line-height: 1.4 !important;
+}
+.h2{
+  font-size: 3rem !important;
+  line-height: 1.4 !important;
+}
+.h3{
+  font-size: 2.5rem !important;
+  line-height: 1.4 !important;
+}
+
+.header-font{
+  font-family: $header-font-family;
+}
+
+.base-font{
+  font-family: $base-font-family;
+}
+
+.text-bold{
+  font-weight: 700 !important;
+}
+
 .shadow-sm{
   box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 30px;
 }
@@ -181,7 +207,7 @@ button > * {
     .main-nav{
       svg{
         path{
-          fill: $color-white;
+          fill: $color-brand;
         }
       }
       .hamburger{
