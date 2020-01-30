@@ -1,0 +1,43 @@
+---
+label: Block CTA
+hide_body: true
+display_field: heading
+fields:
+- type: file
+  name: image
+  label: Image
+- name: image_position
+  label: Image Position
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - image-top
+    - image-middle
+    - image-bottom
+- type: text
+  name: heading
+  label: Heading
+- type: text
+  name: subheading
+  label: Subheading
+- type: textarea
+  name: cta
+  label: CTA
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: text
+  name: button_url
+  label: Button URL
+- type: text
+  name: button_text
+  label: Button Text
+- type: text
+  name: more_url
+  label: More URL
+- type: text
+  name: more_text
+  label: More Text

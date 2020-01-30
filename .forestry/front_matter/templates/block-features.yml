@@ -1,0 +1,32 @@
+---
+label: Block Features
+hide_body: true
+display_field: heading
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: subheading
+  type: text
+  config:
+    required: false
+  label: Subheading
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+- name: items
+  type: blocks
+  label: Items
+  template_types:
+  - block-feature-item
+  config:
+    min: 
+    max: 

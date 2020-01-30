@@ -64,8 +64,8 @@ header{
       min-height: 10em;
       width: 100%;
       position: absolute;
-      background: $color-brand-alt;
-      opacity: .9;
+      background: $color-black;
+      opacity: .1;
       @media(min-width: $laptop) {
         height: 95vh;
         min-height: 30em;
@@ -97,7 +97,7 @@ header{
         margin-bottom: $spacing-unit / 2;
         line-height: 1;
         font-family: $header-font-family;
-        color: $color-brand;
+        color: $color-white;
         text-transform: uppercase;
         @media(min-width: $laptop) {
           font-size: 4rem;
@@ -109,7 +109,7 @@ header{
         }
         h2{
           font-size: 1rem;
-          color: $color-brand;
+          color: $color-white;
           margin-bottom: $spacing-unit / 2;
           text-transform: uppercase;
           letter-spacing: .4rem;
@@ -125,7 +125,7 @@ header{
         }
         p{
           font-size: 1.1rem;
-          color: $color-brand;
+          color: $color-white;
           margin-bottom: $spacing-unit;
           @include fadeIn(
             $delay: 1.4s,
@@ -142,7 +142,7 @@ header{
             flex-direction: row;
           }
           a{
-            color: $color-brand;
+            color: $color-white;
             font-size: 1rem;
             display: flex;
             align-items: center;
@@ -152,7 +152,7 @@ header{
             height: 1em;
             margin-top: .5em;
             path{
-              fill: $color-brand;
+              fill: $color-white;
               }
             }
           }

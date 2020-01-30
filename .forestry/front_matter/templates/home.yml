@@ -1,0 +1,62 @@
+---
+label: Home
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: description
+  label: Description
+- type: file
+  name: image
+  label: Image
+- name: image_position
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - image-top
+    - image-middle
+    - image-bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Image Position
+- type: text
+  name: heading
+  label: Heading
+- type: textarea
+  name: cta
+  label: CTA
+- type: text
+  name: button_url
+  label: Button URL
+- type: text
+  name: button_text
+  label: Button Text
+- type: text
+  name: more_url
+  label: More URL
+- type: text
+  name: more_text
+  label: More Text
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - block-image
+  - block-features
+  - block-showcase
+  - block-content
+  - block-gallery
+  - block-cta
+  config:
+    min: 
+    max: 
+pages:
+- content/_index.md

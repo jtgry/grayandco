@@ -1,0 +1,25 @@
+---
+label: Alerts
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+- type: boolean
+  name: alert
+  label: Alert
+- type: field_group_list
+  name: items
+  label: Items
+  fields:
+  - type: textarea
+    name: heading
+    label: heading
+  - type: text
+    name: link
+    label: link
+  - type: datetime
+    name: date
+    label: date
+pages:
+- content/alerts.md

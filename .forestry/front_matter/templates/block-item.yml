@@ -1,0 +1,34 @@
+---
+label: Block Item
+hide_body: true
+display_field: heading
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- name: more_text
+  type: text
+  config:
+    required: false
+  label: Button Text
+- name: more_url
+  type: text
+  config:
+    required: false
+  label: Button URL
