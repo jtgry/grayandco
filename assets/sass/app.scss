@@ -11,7 +11,7 @@ $base-line-height: 1.6;
 $header-font-family: 'Forum', serif;
 $spacing-unit:     2rem;
 
-$color-white:      rgba(255,255,255,1);
+
 
 $content-width:    780px;
 $content-wide:     1200px;
@@ -20,11 +20,10 @@ $tablet:           700px;
 $laptop:           1000px;
 $desktop:          1400px;
 
-$color-brand:      rgba(76, 83, 73, 1);
+$color-brand:      rgba(43, 43, 43, 1);
 $color-brand-alt:  rgba(234, 228, 221, 1);
-$color-white:      rgba(255,255,255,1);
+$color-white:      rgba(247,247,247,1);
 $color-black:      rgba(30,30,30,1);
-$color-off-white:  rgba(248,248,248,1);
 $color-transparent:rgba(0,0,0,0);
 $color-grey:       rgba(110,110,110,1);
 $color-grey-light: lighten($color-grey, 45%);
