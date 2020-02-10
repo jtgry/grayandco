@@ -1,0 +1,31 @@
+.page-hero{
+  height: 60vh;
+  min-height: 20em;
+  background: $color-white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  .cta{
+    margin-left: $spacing-unit;
+    max-width: 60ch;
+    margin-bottom: $spacing-unit;
+    hr{
+      background: $color-brand;
+      margin-bottom: $spacing-unit / 3;
+    }
+    h1{
+      font-size: 4rem;
+      color: $color-brand;
+      margin-bottom: 0;
+      @media(min-width: $laptop) {
+        font-size: 6rem;
+      }
+    }
+    p{
+      font-family: $header-font-family;
+      font-size: 1.6rem;
+      color: $color-brand;
+
+    }
+  }
+}

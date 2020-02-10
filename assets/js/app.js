@@ -20,9 +20,11 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 
 // Look for .hamburger
+var menuButton = document.querySelector(".menu-button");
 var hamburger = document.querySelector(".hamburger");
 var mainNav = document.querySelector(".main-nav");
 var navItems = document.querySelector(".nav-items");
+var mobileNavItems = document.querySelector(".mobile-nav");
 var modalButton = document.querySelector(".modal-close");
 var scrollUp = document.querySelector(".scroll-to-top");
 var subNavTitle = document.querySelector(".sub-nav-title");
@@ -45,6 +47,18 @@ hamburger.addEventListener("click", function() {
 
 });
 
+menuButton.addEventListener("click", function() {
+  // Toggle class "is-active"
+  
+  // Do something else, like open/close menu
+  mainNav.classList.toggle("fixed");
+  mobileNav.classList.toggle("active");
+  menuButton.classList.toggle("active");
+  
+  setTimeout(() => {
+    mobileNavItems.classList.toggle("active");
+  }, 500);
+});
 
 
 modalButton.addEventListener("click", function() {

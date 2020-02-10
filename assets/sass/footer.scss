@@ -2,7 +2,7 @@ footer{
   width: 100%;
   padding: $spacing-unit * 1.5 0;
   padding-bottom: $spacing-unit * 2;
-  background: $color-brand;
+  background: $color-white;
   position: relative;
   z-index: $height-high;
     @media (min-width: $tablet) {
@@ -24,18 +24,18 @@ footer{
         height: 5em;
         width: auto;
         path{
-          fill: $color-brand-alt;
+          fill: $color-brand;
         }
       }
       margin: 0;
       margin-bottom: $spacing-unit * 1.5;
       small{
         font-weight: 700;
-        color: $color-brand-alt;
+        color: $color-brand;
       }
       small:first-of-type{ 
         font-weight: 700;
-        color: $color-brand-alt;
+        color: $color-brand;
         font-size: .9rem;
       }
     }
@@ -57,7 +57,7 @@ footer{
             text-transform: uppercase;
             letter-spacing: .2em;
             text-decoration: none;
-            color: $color-brand-alt;
+            color: $color-brand;
           }
         }
       }
@@ -68,12 +68,12 @@ footer{
     justify-content: center;
     align-items: center;
     p{
-      color: $color-brand-alt;
+      color: $color-brand;
     }
     a,p{
       margin-bottom: 0;
       font-size: .8rem;
-      color: $color-brand-alt;
+      color: $color-brand;
     }
     .footer-info-logos{
       flex-basis: 20%;

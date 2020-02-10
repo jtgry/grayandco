@@ -10,6 +10,26 @@ quality = 90
 [mediaTypes."text/netlify"]
 delimiter = ""
 suffixes = [""]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+weight = 1
+[[menu.main]]
+identifier = "services"
+name = "Services"
+url = "/services"
+weight = 2
+[[menu.main]]
+identifier = "work"
+name = "Work"
+url = "/work"
+weight = 4
+[[menu.main]]
+identifier = "journal"
+name = "Journal"
+url = "/journal"
+weight = 5
 [[menu.footer]]
 identifier = "instagram"
 name = "Instagram"

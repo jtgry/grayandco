@@ -20,7 +20,7 @@ form{
 }
 
 input, select, textarea{
-  color: $color-black;
+  color: $color-white;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; /* For some Androids */
   outline: none;
@@ -31,8 +31,8 @@ input, select, textarea{
 
 label.form-label {
   font-family: $alt-font-family;
-  color: $color-black;
-  font-weight: 700;
+  color: $color-white;
+  font-weight: 600;
   font-size: .8rem;
   float: left;
   width: 100%;
@@ -46,7 +46,7 @@ input.form-control {
   font-size: 1.2rem;
   width: 100%;
   border: none;
-  border: 2px solid $color-grey;
+  border: 2px solid $color-grey-light;
   transition: all .2s ease-in-out;
   padding: .5em;
   margin-bottom: $spacing-unit / 2;
@@ -61,7 +61,7 @@ select.form-control {
   font-size: 1.2rem;
   width: 100%;
   border: none;
-  border: 2px solid $color-grey;
+  border: 2px solid $color-grey-light;
   transition: all .2s ease-in-out;
   padding: .5em;
   margin-bottom: $spacing-unit / 2;
@@ -78,7 +78,7 @@ textarea.form-control{
   font-size: 1.2rem;
   width: 100%;
   border: none;
-  border: 2px solid $color-grey;
+  border: 2px solid $color-grey-light;
   transition: all .2s ease-in-out;
   margin-bottom: $spacing-unit / 2;
   background: transparent;
@@ -90,29 +90,29 @@ input.field:focus {
 input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
     outline:0px !important;
     -webkit-appearance:none;
-    border-bottom: 2px solid $color-black;
+    border-bottom: 2px solid $color-white;
 }
 input.form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-bottom: 2px solid $color-black;
+    border-bottom: 2px solid $color-white;
 }
 input.form-control:active {
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-bottom: 2px solid $color-black;
+    border-bottom: 2px solid $color-white;
 }
 textarea.form-control:focus {
   height: 7em;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-bottom: 2px solid $color-black;
+  border-bottom: 2px solid $color-white;
 }
 textarea.form-control:active {
   height: 7em;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-bottom: 2px solid $color-black;
+  border-bottom: 2px solid $color-white;
 }
 
 input[type=checkbox],input[type=radio] {
@@ -155,7 +155,7 @@ input[type=checkbox],input[type=radio] {
       justify-content: center;
       width: 100%;
       height: 100%;
-      border: 2px solid $color-black;
+      border: 2px solid $color-white;
       padding: 1em;
       transition: transform 300ms ease;
     }
@@ -169,15 +169,19 @@ input[type=checkbox],input[type=radio] {
       margin: 0;
       cursor: pointer;
       &:checked + .radio-tile{
-        background: $color-black;
+        background: $color-white;
         color: $color-brand;
         transform: scale(1.03, 1.03);
+        .radio-label{
+          color: $color-black;
+        }
       }
     }
     .radio-label{
-      font-weight: 600;
+      font-weight: 500;
       text-align: center;
       line-height: 1.4;
+      color: $color-white;
     }
 
   } 

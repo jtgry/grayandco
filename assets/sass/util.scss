@@ -1,15 +1,21 @@
 
 .h1{
+  font-family: $header-font-family;
   font-size: 4rem !important;
-  line-height: 1.4 !important;
+  line-height: 1.2 !important;
+  display: block;
 }
 .h2{
+  font-family: $header-font-family;
   font-size: 3rem !important;
-  line-height: 1.4 !important;
+  line-height: 1.2 !important;
+  display: block;
 }
 .h3{
+  font-family: $header-font-family;
   font-size: 2.5rem !important;
-  line-height: 1.4 !important;
+  line-height: 1.2 !important;
+  display: block;
 }
 
 .header-font{
@@ -177,113 +183,3 @@ button > * {
   color: $color-black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    body{
-      background: $color-black;
-    }
-    p,li,ol,a,h1,h2,h3,h4,h5,h6,input,select,textarea,label{
-      color: $color-white;
-    }
-    a{
-      &:hover{
-      span{
-        box-shadow: inset 0 -.15em $color-brand;
-        }
-      }
-    }
-    a.link > svg > path{
-      fill: $color-brand;
-    }
-    .modal-full{
-      background: $color-black;
-    }
-    .main-nav > ul > li > a.nav-item{
-      color: $color-brand;
-      &.active{
-        box-shadow: inset 0 -.4em $color-white;
-      }
-    }
-    .main-nav{
-      svg{
-        path{
-          fill: $color-brand;
-        }
-      }
-      .hamburger{
-        background: unset;
-        color: $color-brand;
-        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-          background-color: $color-brand;
-        }
-      }
-    }
-    button,a.button{
-      background: $color-brand;
-      color: $color-brand-alt;
-      span{
-        color: $color-brand-alt;
-        box-shadow: unset;
-      }
-      &:hover{
-        background: darken($color-brand, 5%);
-      }
-    }
-    .baguetteBox-button{
-      background-color: #323232;
-      background-color: rgba(50, 50, 50, 0.5);
-      color: $color-brand;
-      &:hover, &:focus{
-        color: $color-brand-alt;
-        background-color: rgba(50, 50, 50, 0.9); 
-      }
-    }
-    .scroll-to-top{
-      background: $color-brand;
-      color: $color-black;
-      svg{
-        path{
-          fill: $color-black;
-        }
-      }
-    }
-    input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
-      border-bottom: 2px solid $color-brand;
-    }
-    input.form-control:focus {
-      border-bottom: 2px solid $color-brand;
-    }
-    input.form-control:active {
-      border-bottom: 2px solid $color-brand;
-    }
-    textarea.form-control:focus {
-      border-bottom: 2px solid $color-brand;
-    }
-    textarea.form-control:active {
-      border-bottom: 2px solid $color-brand;
-    }
-    .radio-button-group{
-      .radio-button-container{
-        .radio-tile{
-          border: 2px solid $color-brand;
-          color: $color-brand;
-        }
-        .radio-button{
-          &:checked + .radio-tile{
-            background: $color-brand;
-            color: $color-black;
-            transform: scale(1.03, 1.03);
-            label{
-              color: $color-black;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: $color-brand;
-  }
-}

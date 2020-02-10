@@ -4,12 +4,6 @@
     {{ with .Params.image_position }}
       {{ $imagePosition = . }}
     {{ end }}
-    {{ with .Params.image }}
-    {{ $image := (resources.Get . ).Resize "2500x" }}
-    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
-    <img class="lazyload {{$imagePosition}}" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
-    <div class="img-overlay"></div>
-    {{ end }}
     <div class="cta">
       <div class="cta-content">
         {{- with .Params.heading -}}
@@ -38,5 +32,12 @@
         </div>
       </div>
     </div>
+    {{ with .Params.image }}
+    {{ $image := (resources.Get . ).Resize "1500x" }}
+    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
+    <div class="hero-image">
+      <img class="lazyload {{$imagePosition}}" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
   </div>
 </header>

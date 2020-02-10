@@ -2,77 +2,41 @@ header{
   width: 100%;
   position: relative;
   overflow: hidden;
+  background: $color-white;
+  display: flex;
+  justify-content: center;
   .hero{
     height: 90vh;
-    min-height: 10em;
+    min-height: 20em;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 96%;
+
+    
     @media(min-width: $laptop) {
-      height: 70vh;
+      height: 80vh;
       min-height: 30em;
+      margin-top: 5em;
     }
-    &.page-hero{
-      height: 40vh;
-      min-height: 10em;
-      @media(min-width: $laptop) {
-        height: 70vh;
-        min-height: 30em;
-      }
+    .hero-image{
+      
+      flex-basis: 55%;
+      @include fadeInRight(
+        $delay: 2s,
+        $duration: .6s
+      );
+      
       img{
-        height: 40vh;
-        min-height: 10em;
-        @media(min-width: $laptop) {
-          height: 70vh;
-          min-height: 30em;
-        }
-      }
-      .img-overlay{
-        height: 40vh;
-        min-height: 10em;
-        @media(min-width: $laptop) {
-          height: 70vh;
-          min-height: 30em;
-        }
-      }
-      .cta{
-        .cta-content{
-          flex-basis: 100%;
-          text-align: center;
-          margin-left: 0;
-          h1{
-            font-size: 4rem;
-            @media(min-width: $laptop) {
-              font-size: 5rem;
-            }
-          }
-        }
-      }
-    }
-    img{
-      height: 90vh;
-      min-height: 10em;
-      width: 100%;
+      height: 30em;
       object-fit: cover;
-      position: absolute;
-      @media(min-width: $laptop) {
-        height: 70vh;
-        min-height: 30em;
+      box-shadow: $box-shadow;
       }
-    }
-    .img-overlay{
-      height: 90vh;
-      min-height: 10em;
-      width: 100%;
-      position: absolute;
-      background: $color-white;
-      opacity: 1;
-      @media(min-width: $laptop) {
-        height: 70vh;
-        min-height: 30em;
-      }
+  
     }
     .cta{
-      width: 100%;
+      flex-basis: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -82,27 +46,24 @@ header{
       .cta-content{        
         text-align: center;
         position: relative;
-        padding: 1em;
         flex-basis: 100%;
         @media(min-width: $laptop) {
           
-          padding: 4em;
           flex-basis: 45em;
           text-align: left;
           margin-top: 5vh;
         }
         h1{
         font-size: 2.5rem;
-        letter-spacing: .2rem;
+        letter-spacing: -.1rem;
         margin-bottom: $spacing-unit / 2;
         line-height: 1.2;
         font-family: $header-font-family;
         color: $color-brand;
-        text-transform: uppercase;
         @media(min-width: $laptop) {
-          font-size: 2rem;
+          font-size: 4rem;
         }
-        @include fadeIn(
+        @include fadeInLeft(
           $delay: 1s,
           $duration: .6s
         );
@@ -124,10 +85,10 @@ header{
           }
         }
         p{
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           color: $color-brand;
           margin-bottom: $spacing-unit;
-          @include fadeIn(
+          @include fadeInLeft(
             $delay: 1.4s,
             $duration: .6s
           );

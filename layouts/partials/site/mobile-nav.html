@@ -4,12 +4,9 @@
       <ul>
       {{ range .Site.Menus.main.ByWeight }}
         <li>
-          <a href="{{ .URL }}" class="mobile-nav-item">{{ .Name }}</a>
+          <a href="{{ .URL }}" class="mobile-nav-item h2">{{ .Name }}</a>
         </li>
       {{ end }} 
-        <li>
-          <a href="/inquiries" class="nav-item button"><span>Contact</span></a>
-        </li> 
       </ul>
       <div class="mobile-nav-buttons">
         {{ range .Site.Menus.footer }}

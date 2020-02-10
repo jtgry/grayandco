@@ -26,7 +26,7 @@ $color-white:      rgba(247,247,247,1);
 $color-black:      rgba(30,30,30,1);
 $color-transparent:rgba(0,0,0,0);
 $color-grey:       rgba(110,110,110,1);
-$color-grey-light: lighten($color-grey, 45%);
+$color-grey-light: lighten($color-grey, 25%);
 $color-grey-dark:  darken($color-grey, 15%);
 
 $border-radius-soft: 3px;
@@ -51,6 +51,7 @@ $height-top:        2000;
   "mobile-nav",
   "sub-nav",
   "header",
+  "page-header",
   "footer",
   "search",
   "modal",

@@ -1,12 +1,11 @@
 {{ define "main" }}
 {{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
   <article>
-    <h1 class="page-title">{{ .Title }}</h1>
     <section class="block-container">
       <div class="block-header">
         <div class="container">
           {{ with .Params.subheading }}
-          <hr />
+          <hr class="hr-2"/>
           <h2>{{ markdownify . }}</h2>
           {{ end }}
           {{ with .Params.heading }}
@@ -67,7 +66,7 @@
               <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
             </div>
             <div class="input-container">
-              <button class="button" type="submit">Submit</button>
+              <button class="button alt" type="submit">Submit</button>
             </div>
           </div>
         </form>

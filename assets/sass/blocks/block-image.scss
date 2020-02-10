@@ -20,18 +20,16 @@
       min-height: 40em;
     }
   }
+  &.wide{
+    flex-basis: 60%;
+  }
 }
 
 .block-content{
   flex-basis: 45%;
-  hr{
-    margin: 0;
-    margin-bottom: $spacing-unit / 2;
-  }
   
   p{
     font-size: 1rem;
-    font-weight: 500;
   }
   li{
     font-size: 1rem;
@@ -44,5 +42,8 @@
       font-size: 4rem;
       margin-bottom: $spacing-unit / 3;
     }
+  }
+  &.narrow{
+    flex-basis: 35%;
   }  
 }

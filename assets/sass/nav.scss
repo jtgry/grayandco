@@ -1,6 +1,5 @@
 .main-nav{
-  width: 100%;
-  max-width: $content-wide;
+  width: 96%;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -32,12 +31,11 @@
     );
     @media(min-width: $tablet) {
       display: block;
-      margin-left: 1em;
     }
     svg{
       height: 3em;
       path{
-        fill: $color-white;
+        fill: $color-brand;
       }
     }
   } 
@@ -55,7 +53,7 @@
     svg{
       height: 4em;
       path{
-        fill: $color-white;
+        fill: $color-brand;
       }
     }
   }
@@ -90,7 +88,6 @@
         text-decoration: none;
         letter-spacing: .2em;
         font-weight: 600;
-        text-transform: uppercase;
         color: $color-brand;
         box-shadow: inset 0 -.4em $color-transparent;
         transition: all .2s ease-out;
@@ -102,6 +99,7 @@
   
           }
         }
+
         &:hover{
           color: $color-brand;
           box-shadow: inset 0 -.4em $color-grey-light;
@@ -111,13 +109,26 @@
         padding: 1.2em 1.6em;
         margin: 1em .7em;
         box-shadow: none;
-        span{
-          font-size: .7rem;
-          letter-spacing: .2em;
-          font-weight: 600;
+        font-size: .7rem;
+        letter-spacing: .2em;
+        font-weight: 600;
+        color: $color-white;
+        &.border{
+          color: $color-brand;
+          border-color: $color-brand;
+          &:hover{
+            color: $color-white;
+            background: $color-brand;
+          }
         }
 
       }
+      a.button{
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
     }
   }
   .hamburger{

@@ -7,7 +7,7 @@ body {
   letter-spacing: .01em;
   color: $color-black;
   line-height: $base-line-height;
-  background-color: $color-brand;
+  background-color: $color-black;
   z-index: 1;
   overflow-x: hidden;
   word-wrap: break-word;
@@ -31,9 +31,9 @@ ul, ol, dl, figure,
 }
 h1,h2,h3,h4,h5,h6{
   font-weight: $base-font-weight;
-  line-height: 1.5;
+  line-height: 1.2;
   margin-bottom: $spacing-unit / 2;
-  color: lighten($color-black, 10%);
+  color: $color-white;
   font-family: $header-font-family;
 }
 h1{
@@ -63,14 +63,14 @@ ul{
 }
 p,li,ol{
   font-size: 1rem;
-  color: $color-grey-dark;
+  color: $color-white;
   @media(min-width: $laptop){
     font-size: 1.4rem;
   }
 }
 a{
   font-weight: 500;
-  color: $color-black;
+  color: $color-white;
   text-decoration: none;
 
 
@@ -81,17 +81,25 @@ a{
     transition: all .3s ease-out;
   }
 }
-hr {
+.hr-1{
   border: 0;
-  height: 1px;
-  background: $color-brand-alt;
+  height: 1.5px;
+  background: $color-white;
+  width: 2em;
+  margin-bottom: $spacing-unit / 2;
+
+}
+
+.hr-2{
+  border: 0;
+  height: 1.5px;
+  background: $color-white;
   width: 2em;
   margin: 0 auto;
   margin-bottom: $spacing-unit * 1.4;
   transform:rotate(90deg);
 
 }
-
 img{
   width: 100%;
   max-width: 100%;
