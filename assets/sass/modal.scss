@@ -7,7 +7,7 @@
   background: $color-white;
   z-index: $height-high;
   justify-content: center;
-  transition: max-height 1s ease;
+  transition: max-height .6s ease;
   transition-delay: 1s;
   &.active{
     transition: max-height .4s ease;
