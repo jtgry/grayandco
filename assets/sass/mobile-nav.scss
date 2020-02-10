@@ -19,10 +19,14 @@
     li{
       display: block;
       list-style: none;
-      @include fadeOutDown(
-        $delay: 0.08s,
-        $duration: 1s
-      );
+      @for $i from 0 through 10 {
+        &:nth-last-child(#{$i + 1}) {
+          @include fadeOutDown(
+            $delay: 0.1s * $i,
+            $duration: .6s
+          );
+        }
+      }
       a.mobile-nav-item{
         color: $color-brand;
         width: 100%;
@@ -34,7 +38,6 @@
   &.active{
     ul{
       li{
-        
         @for $i from 0 through 10 {
           &:nth-child(#{$i + 1}) {
             @include fadeInUp(

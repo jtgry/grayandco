@@ -85,6 +85,10 @@
   margin-bottom: $spacing-unit * 1.5;
 }
 
+.svg{
+  min-width: 10em;
+  height: auto;
+}
 .overflow-hide{
   overflow: hidden;
 }

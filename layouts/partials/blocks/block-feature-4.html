@@ -1,0 +1,19 @@
+<section class="block-container" alt="{{ .Params.heading }}">
+    {{- with .Params.heading -}}
+      <hr class="hr-1"/>
+      <h3 class="h3 mb2">{{ markdownify . }}</h3>
+    {{ end }}
+  <div class="block-wrapper">
+    {{- if .Params.items -}}
+      {{ range .Params.items }}
+      <a class="" href="{{ .link }}">
+        {{ with .image }}
+        {{ $image := resources.Get .}}
+        <img class="svg" src="{{ $image.RelPermalink }}">
+        {{ end }}
+        
+      </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>

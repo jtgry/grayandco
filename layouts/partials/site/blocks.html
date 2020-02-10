@@ -1,6 +1,7 @@
   {{- range .Params.blocks -}}
   {{- if eq .template "block-image" -}}{{ partial "blocks/block-image" (dict "Params" .) }}{{- end -}}
   {{- if eq .template "block-feature-2" -}}{{ partial "blocks/block-feature-2" (dict "Params" .) }}{{- end -}}
+  {{- if eq .template "block-feature-4" -}}{{ partial "blocks/block-feature-4" (dict "Params" .) }}{{- end -}}
   {{- if eq .template "block-features" -}}{{ partial "blocks/block-features" (dict "Params" .) }}{{- end -}}
   {{- if eq .template "block-showcase" -}}{{ partial "blocks/block-showcase" (dict "Params" .) }}{{- end -}}
   {{- if eq .template "block-cta" -}}{{ partial "blocks/block-cta" (dict "Params" .) }}{{- end -}}

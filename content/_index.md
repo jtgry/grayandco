@@ -12,6 +12,31 @@ blocks:
   - template: block-statement
     heading: Gray & Co.
     content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs. 
+  - template: block-feature-4
+    heading: Who we've worked with.
+    subheading: ''
+    items:
+    - template: feature-item
+      image: "/uploads/aucu.svg"
+      link: "/about"
+    - template: feature-item
+      image: "/uploads/aucu.svg"
+      link: "/about"
+    - template: feature-item
+      image: "/uploads/aucu.svg"
+      link: "/about"
+    - template: feature-item
+      image: "/uploads/aucu.svg"
+      link: "/about"
+    - template: feature-item
+      image: "/uploads/aucu.svg"
+      link: "/about"
+    button_url: "/contact/"
+    button_text: Let's Get Started!
+    more_url: "/About"
+    more_text: Learn more
+    image_position: ''
+    portrait: false
   - template: block-feature-2
     heading: What We Do
     subheading: ''
