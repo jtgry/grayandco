@@ -29,7 +29,8 @@ header{
       );
       
       img{
-      height: 30em;
+      height: 60vh;
+      min-height: 30em;
       object-fit: cover;
       box-shadow: $box-shadow;
       }
