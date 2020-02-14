@@ -1,8 +1,17 @@
 <section class="block-container" alt="{{ .Params.heading }}">
-    {{- with .Params.heading -}}
-      <hr class="hr-1"/>
-      <h3 class="h3 mb2">{{ markdownify . }}</h3>
-    {{ end }}
+  <div class="block-header">
+    <div class="container mb1">
+      {{ with .Params.subheading }}
+      <h2>{{ markdownify . }}</h2>
+      {{ end }}
+      {{ with .Params.heading }}
+      <h3>{{ markdownify . }}</h3>
+      {{ end }}
+      {{- with .Params.content -}}
+        <p>{{ markdownify . }}</p>
+      {{- end -}}
+    </div>
+  </div>
   <div class="block-wrapper">
     {{- if .Params.items -}}
       {{ range .Params.items }}
@@ -11,7 +20,6 @@
         {{ $image := resources.Get .}}
         <img class="svg" src="{{ $image.RelPermalink }}">
         {{ end }}
-        
       </a>
       {{ end }}
     {{ end }}

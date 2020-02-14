@@ -1,0 +1,38 @@
+<section class="block-container">
+  <div class="block-header">
+    <div class="container">
+      {{ with .Params.subheading }}
+      <h2>{{ markdownify . }}</h2>
+      {{ end }}
+      {{ with .Params.heading }}
+      <h3>{{ markdownify . }}</h3>
+      {{ end }}
+      {{- with .Params.content -}}
+        <p>{{ markdownify . }}</p>
+      {{- end -}}
+    </div>
+  </div>
+  <div class="container">
+  {{- if .Params.items -}}
+    {{ range .Params.items }}
+    <div class="dropdown-container">
+      <header class="clearfix">
+        <h3>{{ .question }}</h3>
+          <figure class="expand">
+          <svg alt="" class="svg-icon" viewBox="0 0 20 20">
+            <path fill="none" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+          </svg>
+        </figure>
+      </header>
+      <article>
+        <div class="article-inner">
+          {{- with .answer -}}
+            <p>{{ markdownify . }}</p>
+          {{- end -}}
+        </div>
+      </article>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>

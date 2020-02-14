@@ -13,8 +13,8 @@ blocks:
     heading: Gray & Co.
     content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs. 
   - template: block-feature-4
-    heading: Who we've worked with.
-    subheading: ''
+    heading: 
+    subheading: Who we've worked with.
     items:
     - template: feature-item
       image: "/uploads/aucu.svg"
@@ -58,10 +58,10 @@ blocks:
     image_position: ''
     portrait: false
   - template: block-image
-    heading: About Us
+    heading: Web Design
     subheading: ''
     image: "/uploads/placeholder2.jpg"
-    content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs.
+    content: We build incredibly fast websites that are carefully crafted & designed, with a focus on usability and accessibility for the user.
     more_url: "/About"
     more_text: Learn more
     image_position: ''
@@ -75,5 +75,30 @@ blocks:
     more_text: Learn more
     image_position: ''
     portrait: false
-
+  - template: block-faq
+    subheading: FAQ
+    heading: Frequently Asked Questions
+    content: How can we help?
+    items:
+    - template: block-faq-item
+      question: Who is Gray & Co?
+      answer: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs.
+    - template: block-faq-item
+      question: Who is Gray & Co?
+      answer: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs.
+    - template: block-faq-item
+      question: Who is Gray & Co?
+      answer: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs.
+  - template: block-feature-3
+    heading: Block Feature 3
+    content: An awesome block feature
+    items:
+    - template: feature-item
+      image: "/uploads/placeholder2.jpg"
+    - template: feature-item
+      image: "/uploads/placeholder2.jpg"
+    - template: feature-item
+      image: "/uploads/placeholder2.jpg"
+    - template: feature-item
+      image: "/uploads/placeholder2.jpg"
 ---

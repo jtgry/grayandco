@@ -1,0 +1,40 @@
+.block-feature-3-collage{
+  flex-basis: 55%;
+  display: flex;
+  justify-content: center;
+  .collage-items{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-direction: column;
+    @media(min-width: $phone){
+      flex-direction: row;
+    }
+    .collage-item{
+      flex-basis: 40%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      margin: $spacing-unit / 2;
+      @media(min-width: $phone){
+        &:nth-child(3n+1) {
+            img{
+            height: 10em;
+            width: 100%;
+          } 
+        }
+        &:nth-child(3n){
+          margin-top: -9em;
+        }
+      }
+
+      img{
+        height: 20em;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  
+}

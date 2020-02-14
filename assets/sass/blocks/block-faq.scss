@@ -1,0 +1,82 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  clear: both;
+  height: 0;
+}
+
+.dropdown-container {
+  margin: 1rem auto;
+  
+  color: $color-white;
+  overflow: hidden;
+  border-bottom: 1px solid $color-grey;
+
+}
+
+
+.dropdown-container header {
+  background: $color-black;
+  
+  cursor: pointer;
+  display: flex;
+  padding: .5em 1em;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-white;
+  transition: background-color 350ms ease-in-out;
+}
+
+.dropdown-container.open header {
+  background-color: $color-brand;
+  h3{
+    color: $color-white;
+  }
+}
+
+.dropdown-container h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dropdown-container .expand {
+  height: 25px;
+  width: 25px;
+  transform: rotate(45deg);
+  transition: transform 350ms ease-in-out;
+  margin-bottom: 0;
+  .svg-icon{
+    width: 1.4em;
+    height: 1.4em;
+    path{
+    fill: $color-white;
+    }
+  }
+}
+
+.dropdown-container.open .expand{
+  transform: rotate(0);
+  .svg-icon{
+    path{
+    fill: $color-white;
+    }
+  }
+}
+
+
+.dropdown-container article {
+  max-height: 0px;
+  overflow: hidden;
+  line-height: 1.6; 
+  transition: max-height 350ms ease-in-out;
+}
+
+/* padding can't be on article element because it won't collapse properly, add wrapper around contents */
+.dropdown-container .article-inner {
+  padding: 2em;
+  p,li,ol,a{
+    font-size: 1rem;
+  }
+}
