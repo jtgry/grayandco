@@ -101,4 +101,35 @@ blocks:
       image: "/uploads/placeholder2.jpg"
     - template: feature-item
       image: "/uploads/placeholder2.jpg"
+  - template: block-feature-5
+    heading: Ready to get started?
+    subheading: 
+    content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs.
+    buttons:
+    - template: buttom-item
+      title: Let's get started
+      link: "/about"
+    - template: buttom-item
+      title: Let's get started
+      link: "/about"
+  - template: block-feature-6
+    heading: What our customers are saying.
+    subheading: 
+    content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs.
+    items:
+    - template: block-item
+      image: "/uploads/placeholder2.jpg"
+      title: Jane Smith
+    - template: block-item
+      image: "/uploads/placeholder2.jpg"
+      title: Jane Smith
+    - template: block-item
+      image: "/uploads/placeholder2.jpg"
+      title: Jane Smith
+    - template: block-item
+      image: "/uploads/placeholder2.jpg"
+      title: Jane Smith
+    - template: block-item
+      image: "/uploads/placeholder2.jpg"
+      title: Jane Smith
 ---

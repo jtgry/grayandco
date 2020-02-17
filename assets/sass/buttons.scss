@@ -16,9 +16,9 @@ button:focus {
 }
 
 .button,a.button {
-  background: $color-brand;
+  background: $color-white;
   display: inline-block;
-  border: 2px solid $color-brand;
+  border: 2px solid $color-white;
   box-sizing: border-box;
   font-size: 1rem;
   font-weight: 500;
@@ -35,11 +35,11 @@ button:focus {
   vertical-align: middle;
   transition: all .2s ease-out;
   span{
-    color: $color-white;
+    color: $color-brand;
     font-size: 1rem;
   }
   &:hover{
-    background: lighten($color-brand, 5%);
+    color: darken($color-brand, 5%);
   }
   &.alt{
   background: $color-transparent;

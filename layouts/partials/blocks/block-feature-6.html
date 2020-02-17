@@ -1,4 +1,4 @@
-<!-- Who we've worked with -->
+<!--  -->
 <section class="block-container" alt="{{ .Params.heading }}">
   <div class="block-header">
     <div class="container mb1">
@@ -13,16 +13,20 @@
       {{- end -}}
     </div>
   </div>
-  <div class="block-wrapper">
+  <div class="block-wrapper f-center">
+    <div class="vertical-scroll">
     {{- if .Params.items -}}
       {{ range .Params.items }}
-      <a class="" href="{{ .link }}">
         {{ with .image }}
-        {{ $image := resources.Get . }}
-        <img class="svg" src="{{ $image.RelPermalink }}">
+        {{ $image := resources.Get .}}
+        <div class="vertical-scroll-item">
+          <img src="{{ $image.RelPermalink }}">
+          <p>{{ $.Params.title }}</p>
+        </div>
+        
         {{ end }}
-      </a>
       {{ end }}
     {{ end }}
+    </div>
   </div>
 </section>

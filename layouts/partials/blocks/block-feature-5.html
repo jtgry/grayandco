@@ -1,4 +1,4 @@
-<!-- Who we've worked with -->
+<!-- CTA 1 Need a better name -->
 <section class="block-container" alt="{{ .Params.heading }}">
   <div class="block-header">
     <div class="container mb1">
@@ -13,15 +13,10 @@
       {{- end -}}
     </div>
   </div>
-  <div class="block-wrapper">
-    {{- if .Params.items -}}
-      {{ range .Params.items }}
-      <a class="" href="{{ .link }}">
-        {{ with .image }}
-        {{ $image := resources.Get . }}
-        <img class="svg" src="{{ $image.RelPermalink }}">
-        {{ end }}
-      </a>
+  <div class="block-wrapper f-center">
+    {{- if .Params.buttons -}}
+      {{ range .Params.buttons }}
+      <a class="button border" href="{{ .link }}"><span>{{ .title }}</span></a>
       {{ end }}
     {{ end }}
   </div>
