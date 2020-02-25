@@ -87,11 +87,22 @@
 .f-center{
   justify-content: center;
 }
+
 .svg{
   width: unset;
+  width: 100%;
   min-width: 10em;
   height: auto;
 }
+
+.svg-grey{
+
+   filter: invert(.6);
+    
+
+}
+
+
 .overflow-hide{
   overflow: hidden;
 }

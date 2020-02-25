@@ -69,6 +69,18 @@ modalButton.addEventListener("click", function() {
   loginForm.classList.remove("active");
 
 });
+
+mobileNav.addEventListener("click", function() {
+  // Toggle class "is-active"
+  mainNav.classList.toggle("fixed");
+  mobileNav.classList.toggle("active");
+  menuButton.classList.toggle("active");
+
+  setTimeout(() => {
+    mobileNavItems.classList.toggle("active");
+  }, 500);
+
+});
 document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener('click', function (event) {
     if ( event.target.classList.contains( 'search' ) ) {
@@ -134,6 +146,9 @@ window.sr = ScrollReveal({
   sr.reveal('.block-content', {origin: 'bottom', delay: .8, duration: 600});
   sr.reveal('.block-feature-item', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
   sr.reveal('.block-showcase-item', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
+  sr.reveal('.collage-item', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
+  sr.reveal('.svg', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
+
   sr.reveal('.block-cta', {origin: 'bottom', duration: 600});
   sr.reveal('.block-header', {origin: 'bottom', duration: 600});
   sr.reveal('.site-footer', {origin: 'bottom', duration: 600});

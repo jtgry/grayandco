@@ -16,10 +16,10 @@
   <div class="block-wrapper">
     {{- if .Params.items -}}
       {{ range .Params.items }}
-      <a class="" href="{{ .link }}">
+      <a  href="{{ .link }}">
         {{ with .image }}
         {{ $image := resources.Get . }}
-        <img class="svg" src="{{ $image.RelPermalink }}">
+        <img src="{{ $image.RelPermalink }}" class="svg svg-grey">
         {{ end }}
       </a>
       {{ end }}
