@@ -42,13 +42,13 @@ blocks:
     subheading: ''
     image: "/uploads/placeholder2.jpg"
     items:
-    - template: feature-item-2
+    - template: block-feature-item-2
       header: Web Design
       link: "/about"
-    - template: feature-item-2
+    - template: block-feature-item-2
       header: Branding
       link: "/about"
-    - template: feature-item-2
+    - template: block-feature-item-2
       header: Digital 
       link: "/about"
     button_url: "/contact/"
