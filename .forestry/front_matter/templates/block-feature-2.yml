@@ -1,0 +1,53 @@
+---
+label: Block Feature Two
+hide_body: true
+display_field: heading
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: subheading
+  type: text
+  config:
+    required: false
+  label: Subheading
+- name: image
+  type: file
+  config:
+    maxSize: '5'
+  label: Image
+- name: image_position
+  label: Image Position
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - image-top
+    - image-middle
+    - image-bottom
+- type: boolean
+  name: portrait
+  label: Portrait Mode
+- name: items
+  type: blocks
+  label: Items
+  template_types:
+  - block-feature-item-2
+  config:
+    min: 
+    max: 
+- type: text
+  name: button_url
+  label: Button URL
+- type: text
+  name: button_text
+  label: Button Text
+- type: text
+  name: more_url
+  label: More URL
+- type: text
+  name: more_text
+  label: More Text

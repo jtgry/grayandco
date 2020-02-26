@@ -1,0 +1,13 @@
+---
+label: Block Feature Item Two
+hide_body: true
+display_field: header
+fields:
+- name: header
+  type: text
+  config:
+    required: true
+  label: Heading
+- name: link
+  type: text
+  label: Link
