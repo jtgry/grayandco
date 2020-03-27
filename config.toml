@@ -33,17 +33,17 @@ weight = 5
 [[menu.footer]]
 identifier = "instagram"
 name = "Instagram"
-url = "https://instagram.com/laurenagrayphoto"
+url = "https://instagram.com/grayandco_"
 weight = 1
 [[menu.footer]]
 identifier = "contact"
 name = "Contact"
-url = "/contact/"
+url = "/#contact"
 weight = 3
 [[menu.footer]]
 identifier = "facebook"
 name = "Facebook"
-url = "https://www.facebook.com/LaurenAGrayPhoto/"
+url = "https://www.facebook.com/grayandco_/"
 weight = 2
 [outputFormats.HEADERS]
 baseName = "_headers"

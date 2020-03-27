@@ -34,14 +34,17 @@
     svg{
       height: 3em;
       path{
+        stroke: $color-brand;
         fill: $color-brand;
       }
+
     }
   } 
 
   .mobile-logo{
-  line-height: 0;
+    line-height: 0;
     display: block;
+    margin-left: $spacing-unit / 2;
     @include fadeIn(
       $delay: 1s,
       $duration: .6s
@@ -50,7 +53,7 @@
       display: none;
     }
     svg{
-      height: 4em;
+      height: 3em;
       path{
         fill: $color-brand;
       }
@@ -74,9 +77,7 @@
       li:not(.mobile){
       display: block;
       }
-      .mobile{
-        display: none;
-      }
+
     }
     li{
       list-style: none;
@@ -115,6 +116,7 @@
         color: $color-brand;
         background: $color-white;
         border-color: $color-white;
+
         &.border{
           background: $color-transparent;
           color: $color-brand;
@@ -142,7 +144,6 @@
     align-items: center;
     display: flex;
     color: $color-brand;
-    margin-right: $spacing-unit / 2;
     &:hover{
       background: none;
     }

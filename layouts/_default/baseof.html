@@ -23,7 +23,7 @@
     {{ block "site/google" . }}{{ partial "site/google.html" . }}{{ end }}
   <body id="root">
     {{ block "alert" . }}{{ partial "site/alert.html" . }}{{ end }}
-    {{ block "nav" . }}{{ partial "site/nav.html" . }}{{ end }}
+    {{ block "nav" . }}{{ partial "site/nav-preview.html" . }}{{ end }}
     {{ block "mobile-nav" . }}{{ partial "site/mobile-nav.html" . }}{{ end }}
     {{ if eq .Site.Params.Search true }}
     {{ block "search" . }}{{ partial "site/search.html" . }}{{ end }}

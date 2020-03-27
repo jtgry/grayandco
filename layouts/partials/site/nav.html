@@ -8,7 +8,6 @@
   </a>
   <ul class="nav-items">
   {{ $currentPage := . }}
-  
   {{ range .Site.Menus.main.ByWeight }}
     <li>
       <a href="{{ .URL }}" class="nav-item {{ if eq $currentPage.URL .URL }}active{{ end }}">{{ .Name }}</a>
@@ -31,7 +30,7 @@
       <button class="nav-item button border menu-button" type="button" aria-label="Menu">Menu</button>
     </li>
     <li>
-      <a data-scroll href="#contact" class="nav-item button">Contact</a>
+      <a data-scroll href="/#contact" class="nav-item button">Contact</a>
     </li>
     <li class="mobile">
       <button class="hamburger hamburger--squeeze" type="button" aria-label="Menu">

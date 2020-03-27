@@ -36,12 +36,13 @@ header{
   
     }
     .cta{
+    width: 94%;
+    margin: 0 3%;
       .cta-content{        
         text-align: center;
         @media(min-width: $laptop) {
           max-width: 70ch;
           text-align: left;
-          margin-left: $spacing-unit * 2;
         }
         h1{
         font-size: 2.5rem;
@@ -50,7 +51,13 @@ header{
         line-height: 1.2;
         font-family: $header-font-family;
         color: $color-brand;
+        @media(min-width: $tablet) {
+          font-size: 4rem;
+        }
         @media(min-width: $laptop) {
+          font-size: 6rem;
+        }
+        @media(min-width: $desktop) {
           font-size: 7rem;
         }
         @include fadeInLeft(

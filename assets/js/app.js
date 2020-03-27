@@ -37,15 +37,6 @@ var searchButton = document.getElementById('searchButton');
 var body = document.getElementById('root');
 var modalFull = document.querySelector(".modal-full");
 
-// On click
-hamburger.addEventListener("click", function() {
-  // Toggle class "is-active"
-  hamburger.classList.toggle("is-active");
-  // Do something else, like open/close menu
-  mainNav.classList.toggle("fixed");
-  mobileNav.classList.toggle("active");
-
-});
 
 menuButton.addEventListener("click", function() {
   // Toggle class "is-active"
@@ -148,7 +139,7 @@ window.sr = ScrollReveal({
   sr.reveal('.block-showcase-item', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
   sr.reveal('.collage-item', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
   sr.reveal('.svg', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
-
+  sr.reveal('.block-contact', {origin: 'bottom', duration: 600});
   sr.reveal('.block-cta', {origin: 'bottom', duration: 600});
   sr.reveal('.block-header', {origin: 'bottom', duration: 600});
   sr.reveal('.site-footer', {origin: 'bottom', duration: 600});

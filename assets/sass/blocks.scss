@@ -1,11 +1,9 @@
 .block-container{
   width: 94%;
-  margin: 0 3%;
+  margin: $spacing-unit 3%;
   display: block;
-  margin-bottom: $spacing-unit;
   @media (min-width: $tablet) {
-    margin: 0 auto;
-    margin-bottom: $spacing-unit * 3;
+    margin: $spacing-unit * 2 auto;
     max-width: $content-wide;
   }
   @include fadeIn(
@@ -45,7 +43,8 @@
 }
 .block-container{
   &:first-child{
-    margin-top: $spacing-unit * 3;
+    margin-top: -$spacing-unit * 3;
+    box-shadow: $box-shadow;
   }
 
 }
