@@ -23,8 +23,8 @@ blocks:
   - template: block-item
     image: "/uploads/primary.jpg"
     heading: Web Design
-    content: We craft beautiful websites using that are blazing fast that work with
-      devices all shapes & forms with a focus on usability and accessibility.
+    content: We craft beautiful websites that are blazing fast, work with devices
+      of all shapes & forms, and with a focus on usability and accessibility.
     more_text: ''
     more_url: ''
   - template: block-item
