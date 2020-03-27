@@ -14,7 +14,7 @@ header{
     justify-content: space-between;
     @media(min-width: $laptop) {
       height: 90vh;
-      min-height: 30em;
+      min-height: 40em;
     }
     .hero-image{
       width: 100%;
@@ -52,10 +52,10 @@ header{
         font-family: $header-font-family;
         color: $color-brand;
         @media(min-width: $tablet) {
-          font-size: 4rem;
+          font-size: 3rem;
         }
         @media(min-width: $laptop) {
-          font-size: 6rem;
+          font-size: 5rem;
         }
         @media(min-width: $desktop) {
           font-size: 7rem;
