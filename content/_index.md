@@ -30,9 +30,8 @@ blocks:
   - template: block-item
     image: "/uploads/placeholder2.jpg"
     heading: Branding
-    content: Based in Central Alabama, Tyler and Lauren are a husband and wife creative
-      team that works to craft beautifully designed digital solutions for businesses,
-      organizations, and other creatives.
+    content: 'We work with clients big & small to discover their brand that best resonates
+      with their customers. '
     more_text: ''
     more_url: ''
   - template: block-item
