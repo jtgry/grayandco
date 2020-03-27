@@ -42,8 +42,8 @@ button:focus {
     color: darken($color-brand, 5%);
   }
   &.alt{
-  background: $color-transparent;
-  border-color: $color-white;
+  background: $color-brand;
+  border-color: $color-brand;
   color: $color-white;
     span{
       color: $color-white;

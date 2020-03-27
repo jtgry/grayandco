@@ -1,5 +1,5 @@
 .main-nav{
-  width: 96%;
+  width: 100%;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -9,11 +9,8 @@
   justify-content: center;
   position: absolute;
   z-index: $height-top;
-
-  padding: .5em 0;
-  @media(min-width: $tablet) {
-    margin-top: $spacing-unit / 2;
-  }
+  margin-top: $spacing-unit;
+  padding: .2em 0;
   @include fadeIn(
     $delay: 1s,
     $duration: .6s
@@ -25,12 +22,14 @@
   .nav-logo{
     display: none;
     line-height: 0;
+    margin-left: $spacing-unit;
     @include fadeIn(
       $delay: 1s,
       $duration: .6s
     );
     @media(min-width: $tablet) {
       display: block;
+
     }
     svg{
       height: 3em;
@@ -63,6 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: $spacing-unit;
     @include fadeIn(
       $delay: 1.4s,
       $duration: .6s
@@ -93,7 +93,7 @@
         transition: all .2s ease-out;
         &.active{
           color: $color-brand;
-          box-shadow: inset 0 -.4em $color-brand;
+          box-shadow: inset 0 -.1em $color-brand;
           &:hover{
             color: $color-brand;
   
@@ -112,8 +112,11 @@
         font-size: .7rem;
         letter-spacing: .2em;
         font-weight: 600;
-        color: $color-white;
+        color: $color-brand;
+        background: $color-white;
+        border-color: $color-white;
         &.border{
+          background: $color-transparent;
           color: $color-brand;
           border-color: $color-brand;
           &:hover{
@@ -138,7 +141,7 @@
     text-transform: uppercase;
     align-items: center;
     display: flex;
-    color: $color-white;
+    color: $color-brand;
     margin-right: $spacing-unit / 2;
     &:hover{
       background: none;

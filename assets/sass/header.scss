@@ -12,47 +12,36 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 96%;
-
-    
     @media(min-width: $laptop) {
-      height: 80vh;
+      height: 90vh;
       min-height: 30em;
-      margin-top: 5em;
     }
     .hero-image{
-      
-      flex-basis: 55%;
-      @include fadeInRight(
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      @include fadeIn(
         $delay: 2s,
         $duration: .6s
       );
       
       img{
-      height: 60vh;
-      min-height: 20em;
+      height: 100%;
+      height: 100vh;
+      width: 100%;
+      min-height: 100%;
       object-fit: cover;
       box-shadow: $box-shadow;
       }
   
     }
     .cta{
-      flex-basis: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @media(min-width: $laptop) {
-        justify-content: flex-start;
-      }
       .cta-content{        
         text-align: center;
-        position: relative;
-        flex-basis: 100%;
         @media(min-width: $laptop) {
-          
-          flex-basis: 45em;
+          max-width: 70ch;
           text-align: left;
-          margin-top: 5vh;
+          margin-left: $spacing-unit * 2;
         }
         h1{
         font-size: 2.5rem;
@@ -62,7 +51,7 @@ header{
         font-family: $header-font-family;
         color: $color-brand;
         @media(min-width: $laptop) {
-          font-size: 4rem;
+          font-size: 7rem;
         }
         @include fadeInLeft(
           $delay: 1s,
@@ -122,15 +111,17 @@ header{
         .button{
           margin: 0;
           margin-right: $spacing-unit / 2;
-          background: $color-brand;
           border-color: $color-brand;
-          color: $color-white;
+          color: $color-brand;
           &:hover{
             background: lighten($color-brand, 5%);
+            span{
+            color: $color-white;
+            }   
           }
           span{
             font-size: 1rem;
-            color: $color-white;
+            color: $color-brand;
           }
           @include fadeInUp(
             $delay: 1.6s,

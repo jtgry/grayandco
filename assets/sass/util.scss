@@ -200,8 +200,15 @@ button > * {
 .color-black{
   color: $color-black;
 }
-
-
+.background-white{
+  background: $color-white;
+}
+.background-black{
+  background: $color-black;
+}
+.background-brand{
+  background: $color-brand;
+}
 .vertical-scroll{
   display: flex;
   scroll-snap-type: x mandatory;

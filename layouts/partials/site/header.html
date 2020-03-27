@@ -4,6 +4,13 @@
     {{ with .Params.image_position }}
       {{ $imagePosition = . }}
     {{ end }}
+    {{ with .Params.image }}
+    {{ $image := (resources.Get . ).Resize "2000x" }}
+    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
+    <div class="hero-image">
+      <img class="lazyload {{$imagePosition}}" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
     <div class="cta">
       <div class="cta-content">
         {{- with .Params.heading -}}
@@ -17,7 +24,7 @@
         {{ end }}
         <div class="cta-links">
         {{- if and .Params.button_url .Params.button_text -}}
-        <a href="{{ .Params.button_url }}" class="button"><span>{{ .Params.button_text }}</span></a>
+        <a data-scroll href="{{ .Params.button_url }}" class="button border"><span>{{ .Params.button_text }}</span></a>
         {{ end }}
         {{- if and .Params.more_url .Params.more_text -}}
         <a href="{{ .Params.more_url }}" class="cta-more">{{ .Params.more_text }} 
@@ -32,12 +39,5 @@
         </div>
       </div>
     </div>
-    {{ with .Params.image }}
-    {{ $image := (resources.Get . ).Resize "1500x" }}
-    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
-    <div class="hero-image">
-      <img class="lazyload {{$imagePosition}}" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
-    </div>
-    {{ end }}
   </div>
 </header>
