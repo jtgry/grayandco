@@ -82,13 +82,16 @@ header{
           }
         }
         p{
-          font-size: 1.2rem;
+          font-size: 1rem;
           color: $color-brand;
           margin-bottom: $spacing-unit;
           @include fadeInLeft(
             $delay: 1.4s,
             $duration: .6s
           );
+          @media(min-width: $laptop) {
+            font-size: 1.2rem;
+          }
         }
  
         .cta-links{
