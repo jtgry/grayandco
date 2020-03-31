@@ -1,7 +1,7 @@
 ---
 title: Home
-image: "/uploads/primary.jpg"
-image_position: image-top
+image: "/uploads/lauren-tyler-2.jpg"
+image_position: image-bottom
 heading: Your Local Digital Creative
 description: Web Design &amp; Development Based In Alabama
 cta: Based in Central Alabama, Tyler and Lauren are a husband and wife creative team
@@ -21,7 +21,7 @@ blocks:
     all their creative & digital needs.
   items:
   - template: block-item
-    image: "/uploads/primary.jpg"
+    image: "/uploads/web-design.jpg"
     heading: Web Design
     content: We craft beautiful websites that are blazing fast, work with devices
       of all shapes & forms, and with a focus on usability and accessibility.
