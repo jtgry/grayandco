@@ -30,16 +30,16 @@ blocks:
   - template: block-item
     image: "/uploads/DSC_0110-2.jpg"
     heading: Branding
-    content: 'We work with clients big & small to discover their brand that best resonates
-      with their customers. '
+    content: We work with clients big & small to discover their brand. We believe
+      in telling your story, and will help you discover a brand that best reflects
+      your company and resonates with your customers.
     more_text: ''
     more_url: ''
   - template: block-item
     image: "/uploads/DSC_0036-2.jpg"
     heading: Photography
-    content: Based in Central Alabama, Tyler and Lauren are a husband and wife creative
-      team that works to craft beautifully designed digital solutions for businesses,
-      organizations, and other creatives.
+    content: 'Professional photos are one of the most important aspects of your online
+      presence. Your company is awesome, so we can help show people just how awesome. '
     more_text: ''
     more_url: ''
 - template: block-statement
