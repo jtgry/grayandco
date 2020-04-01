@@ -177,7 +177,7 @@ table{
   padding: $spacing-unit / 2 0;
   
   @media(min-width: $laptop) {
-    margin: 0 auto;
+    margin: $spacing-unit * 3 auto;
   }
 }
 .alert-banner{

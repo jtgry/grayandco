@@ -1,21 +1,11 @@
 {{ define "main" }}
 {{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
-  <article>
-    <div class="block-header">
-      <h1 class="page-title">{{ .Title }}</h1>
-      {{- with .Params.intro -}}
-      <p>{{ markdownify . }}</p>
-      {{ end }}
-      {{ with .Params.date }}
-      <h2>{{ .Format "January 2, 2006" }}</h2>
-      {{ end }}
-    </div>    
+  <article> 
     {{ with .Content }}
     <section class="page-content">
       {{ . }}
     </section>
     {{ end }}
     {{ block "blocks" . }}{{ partial "site/blocks.html" . }}{{ end }}
-    
   </article>
 {{ end }}
