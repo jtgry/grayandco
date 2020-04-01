@@ -3,7 +3,7 @@ disableAliases = true
 enableRobotsTXT = true
 languageCode = "en-us"
 metaDataFormat = "yaml"
-title = "Gray & Co"
+title = "Gray & Co."
 [imaging]
 anchor = "smart"
 quality = 90
