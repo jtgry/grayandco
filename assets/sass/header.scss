@@ -31,9 +31,23 @@ header{
       width: 100%;
       min-height: 100%;
       object-fit: cover;
+      position: absolute;
       box-shadow: $box-shadow;
+      object-position: 80% 50%;
+      @media(min-width: $laptop) {
+        object-position: 50% 50%;
+        }
       }
-  
+      .img-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $color-white;
+        opacity: .8;
+        @media(min-width: $laptop) {
+          display: none;
+        }
+      }
     }
     .cta{
     width: 94%;
