@@ -28,7 +28,7 @@ blocks:
     more_text: ''
     more_url: ''
   - template: block-item
-    image: "/uploads/DSC_0048.jpg"
+    image: "/uploads/DSC_0110-2.jpg"
     heading: Branding
     content: 'We work with clients big & small to discover their brand that best resonates
       with their customers. '
