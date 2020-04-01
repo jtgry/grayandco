@@ -43,7 +43,7 @@ weight = 3
 [[menu.footer]]
 identifier = "facebook"
 name = "Facebook"
-url = "https://www.facebook.com/grayandco_/"
+url = "https://www.facebook.com/wearegray/"
 weight = 2
 [outputFormats.HEADERS]
 baseName = "_headers"
