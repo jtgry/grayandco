@@ -1,9 +1,10 @@
 ---
-title: Home
+title: Your Local Digital Creative
 image: "/uploads/lauren-tyler-2.jpg"
 image_position: image-bottom
 heading: Your Local Digital Creative
-description: Web Design &amp; Development Based In Alabama
+description: Husband and Wife creative team
+  that works to craft beautifully designed digital solutions
 cta: Based in Central Alabama, Tyler and Lauren are a husband and wife creative team
   that works to craft beautifully designed digital solutions for businesses, organizations,
   and other creatives.
