@@ -38,8 +38,10 @@ blocks:
   - template: block-item
     image: "/uploads/DSC_0036-2.jpg"
     heading: Photography
-    content: 'Professional photos are one of the most important aspects of your online
-      presence. Your company is awesome, so we can help show people just how awesome. '
+    content: 'You work hard creating and running your business, and we want to showcase
+      everything that makes you great! Professional photos are one of the most important
+      aspects of your online presence and essential to customers understanding who
+      you are. '
     more_text: ''
     more_url: ''
 - template: block-statement
