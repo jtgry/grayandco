@@ -43,7 +43,7 @@
 }
 .block-container{
   &:first-child{
-    margin-top: -$spacing-unit * 3;
+    margin-top: -$spacing-unit * 2;
     box-shadow: $box-shadow;
   }
 
