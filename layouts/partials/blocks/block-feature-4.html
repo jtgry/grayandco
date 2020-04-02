@@ -3,6 +3,7 @@
   <div class="block-header">
     <div class="container mb1">
       {{ with .Params.subheading }}
+      <hr class="hr-2" />
       <h2>{{ markdownify . }}</h2>
       {{ end }}
       {{ with .Params.heading }}
@@ -13,15 +14,15 @@
       {{- end -}}
     </div>
   </div>
-  <div class="block-wrapper">
+  <div class="flex-wrapper">
     {{- if .Params.items -}}
       {{ range .Params.items }}
-      <a  href="{{ .link }}">
+      <div class="flex-item" href="{{ .link }}">
         {{ with .image }}
         {{ $image := resources.Get . }}
         <img src="{{ $image.RelPermalink }}" class="svg svg-grey">
         {{ end }}
-      </a>
+      </div>
       {{ end }}
     {{ end }}
   </div>

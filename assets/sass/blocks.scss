@@ -82,10 +82,23 @@
   }
 }
 
-.block-wrapper{
-  @media(min-width: $laptop){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flex-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+  .flex-item{
+    flex-basis: 25%;
+    margin: $spacing-unit / 2;
+    @media(min-width: $laptop){
+      flex-basis: 15%;
+      margin: $spacing-unit;
+    }
+    img{
+      max-height: 80px;
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
 }

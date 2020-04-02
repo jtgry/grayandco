@@ -46,6 +46,40 @@ blocks:
       of your online presence and essential to customers understanding who you are. '
     more_text: ''
     more_url: ''
+- template: block-feature-4
+  heading: Who we've worked with.
+  subheading: Some cool folks that we know and love.
+  items:
+  - template: feature-item
+    image: "/uploads/aucu.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/ama.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/ogb.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/lmmm.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/lmc.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/aas.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/hartwell.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/blessyourheart.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/toulouse.svg"
+    link:
+  - template: feature-item
+    image: "/uploads/laurengray.svg"
+    link:
 - template: block-statement
   heading: Gray & Co.
   content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet
