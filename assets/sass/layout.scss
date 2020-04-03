@@ -152,6 +152,9 @@ table{
   }
 
 }
+::selection {
+  background: #F7876B;
+}
 .container{
   width: 100%;
   max-width: $content-width;
