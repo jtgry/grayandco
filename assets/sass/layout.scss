@@ -193,6 +193,10 @@ table{
   align-items: center;
   padding: 0 $spacing-unit;
   text-align: center;
+  @include fadeIn(
+  $delay: 1.6s,
+  $duration: .6s
+  );
   @media(min-width: $laptop){
     height: 2.5em;
   }
