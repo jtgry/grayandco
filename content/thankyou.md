@@ -7,7 +7,7 @@ subheading: ''
 intro: 'Thank you for your message!'
 
 ---
-Thank you so much for your message, and we can't wait to connect with you. We are currently most crafting websites, drinking coffee, and listening to spotify.  
+Thank you so much for your message, and we can't wait to connect with you. We are currently crafting websites, drinking coffee, and listening to spotify.  
 
 <iframe class="mt2" src="https://open.spotify.com/embed/playlist/0FDaCJ8ePaeAeVsKwYJbXh" width="100%" height="500px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
