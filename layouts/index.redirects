@@ -4,3 +4,4 @@
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
 {{- end -}}
+/spotify https://open.spotify.com/playlist/0FDaCJ8ePaeAeVsKwYJbXh 301!
