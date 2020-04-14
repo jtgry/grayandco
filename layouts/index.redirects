@@ -1,7 +1,6 @@
-# redirects for Netlify - https://www.netlify.com/docs/redirects/
+/spotify https://open.spotify.com/playlist/0FDaCJ8ePaeAeVsKwYJbXh 301!
 {{- range $p := .Site.Pages -}}
 {{- range .Aliases }}
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
 {{- end -}}
-/spotify https://open.spotify.com/playlist/0FDaCJ8ePaeAeVsKwYJbXh 301!
