@@ -1,0 +1,9 @@
+version: '2'
+
+tasks:
+  server:
+    cmds:
+      - hugo server
+  build:
+    cmds:
+      - hugo --minify

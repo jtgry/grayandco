@@ -1,0 +1,32 @@
+---
+label: Block Reviews
+hide_body: true
+display_field: heading
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: subheading
+  type: text
+  config:
+    required: false
+  label: Sub Heading
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- name: items
+  type: blocks
+  label: Items
+  template_types:
+  - block-item
+  config:
+    min: 
+    max: 

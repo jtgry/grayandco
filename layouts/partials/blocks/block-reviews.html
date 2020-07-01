@@ -1,0 +1,40 @@
+<section class="block-container">
+  <div class="block-header">
+    <div class="container">
+      {{ with .Params.subheading }}
+      <hr />
+      <h2>{{ markdownify . }}</h2>
+      {{ end }}
+      {{ with .Params.heading }}
+      <h3>{{ markdownify . }}</h3>
+      {{ end }}
+      {{- with .Params.content -}}
+        <p>{{ markdownify . }}</p>
+      {{- end -}}
+    </div>
+  </div>
+  <div class="block-review-items">
+    {{- if .Params.items -}}
+      {{ range .Params.items }}
+      <div class="block-review-item">
+        {{ with .image }}
+        <div class="block-review-item-media">
+        {{ $image := (resources.Get .).Resize "300x" }}
+        {{ $imageThumbnail := $image.Resize "100x q25" | images.Filter (images.GaussianBlur 3) }}
+        <img class="lazyload" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+        </div>
+        <div class="img-overlay"></div>
+        {{ end }}
+        <div class="block-review-item-content">
+        {{ with .heading }}
+          <h3>{{ markdownify . }}</h3>
+        {{ end }}
+        {{ with .content }} 
+        <p>{{ . }}</p>
+        {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
