@@ -20,7 +20,9 @@
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
 
   </head>
-    {{ block "site/google" . }}{{ partial "site/google.html" . }}{{ end }}
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://hyena.wearegray.co/script.js" site="BSBJTXJR" defer></script>
+  <!-- / Fathom -->
   <body id="root">
     {{ block "alert" . }}{{ partial "site/alert.html" . }}{{ end }}
     {{ block "nav" . }}{{ partial "site/nav-preview.html" . }}{{ end }}

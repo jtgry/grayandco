@@ -80,9 +80,9 @@ blocks:
   - template: feature-item
     image: "/uploads/laurengray.svg"
     link:
-- template: block-reviews
+- template: block-reviews-off
   heading: ''
-  subheading: More Love Notes
+  subheading: What People are Saying
   content: ''
   items:
   - template: block-item
@@ -92,6 +92,17 @@ blocks:
       me feel so comfortable in front of the camera and it was genuinely a FUN experience
       working with her. I had a blast! And the best part: I love how my photos turned
       out!!"'
+    more_text: ''
+    more_url: ''
+  - template: block-item
+    image: "/uploads/DSC_0036-2.jpg"
+    heading: Matt & Nikki
+    content: '"Lauren did a wonderful job with our photos. I love that she made the
+      whole experience sweet and fun. My husband and I felt so comfortable being photographed
+      by her. I also love that she seemed so happy about her work. It’s great to work
+      with someone that loves what they do.I would highly recommend her to anyone
+      that wants amazing photos. I will definitely use her again for any future photo
+      needs."'
     more_text: ''
     more_url: ''
   - template: block-item
