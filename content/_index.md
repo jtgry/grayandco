@@ -3,10 +3,10 @@ title: Your Local Digital Creative
 image: "/uploads/lauren-tyler-2.jpg"
 image_position: image-bottom
 heading: Your Local Digital Creative
-description: Husband and Wife creative team
-  that works to craft beautifully designed digital solutions
-cta: Based in Central Alabama, Tyler and Lauren are a husband and wife creative team
-  that works to craft beautifully designed digital solutions for businesses, organizations,
+description: Husband and Wife creative team based in Alabama
+  that works to craft beautifully designed digital solutions.
+cta: We are a husband and wife creative team based in Alabama
+  that crafts beautifully designed websites, branding, logos, and digital solutions for businesses, organizations,
   and other creatives.
 button_url: "/#contact"
 button_text: Let's Get Started!
@@ -14,7 +14,8 @@ more_url: ''
 more_text: ''
 blocks:
 - template: block-contact
-  heading: Contact Us
+  heading: Ready to start your project?
+  subheading: Contact Us
 - template: block-feature-1
   heading: Our Services
   subheading: What We Do
@@ -52,34 +53,55 @@ blocks:
   items:
   - template: feature-item
     image: "/uploads/aucu.svg"
+    alt: "Auburn University Credit Union"
     link:
   - template: feature-item
     image: "/uploads/ama.svg"
+    alt: "Alabama Museums Association"
     link:
   - template: feature-item
     image: "/uploads/ogb.svg"
+    alt: "Original Grace Boutique"
     link:
   - template: feature-item
     image: "/uploads/lmmm.svg"
+    alt: "Lake Martin Mini Mall"
     link:
   - template: feature-item
     image: "/uploads/lmc.svg"
+    alt: "Lake Martin Chiro"
     link:
   - template: feature-item
     image: "/uploads/aas.svg"
+    alt: "Alabama Archeology Society"
     link:
   - template: feature-item
     image: "/uploads/hartwell.svg"
+    alt: "Hartlwell Records"
     link:
   - template: feature-item
     image: "/uploads/blessyourheart.svg"
+    alt: "Bless Your Heart"
     link:
   - template: feature-item
     image: "/uploads/toulouse.svg"
+    alt: "Fort Toulouse - Fort Jackson"
     link:
   - template: feature-item
     image: "/uploads/laurengray.svg"
+    alt: "Lauren Gray Photography"
     link:
+- template: block-image
+  heading: "Auburn University Credit Union"
+  subheading: 'Featured Client'
+  image: "/uploads/aucu-website.jpg"
+  content: "AUCU has been serving the Auburn area for nearly 60 years and just opened a branch in Montgomery as well! They are hometown credit union with a heart for local community and centered around excellent customer service. \n\n
+
+    We absolutely loved being able to serve them to create their new website and refresh their branding! AUCU wanted a website that was responsive, fast, easy to navigate and accessible for all of their members. We were so happy to be able serve them to help them better serve you."
+  more_url: https://myaucu.org
+  more_text: View Website
+  image_position: 'image-top'
+  portrait: true
 - template: block-reviews-off
   heading: ''
   subheading: What People are Saying

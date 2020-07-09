@@ -1,18 +1,21 @@
 <section class="block-container" alt="{{ .Params.heading }}">
-  <div class="block-wrapper">
+  <div class="flex-wrapper">
     <div class="block-image">
       {{ $imagePosition := "image-middle"}}
       {{ with .Params.image_position }}
         {{ $imagePosition = . }}
       {{ end }}
       {{- with .Params.image -}}
-        {{ $image := (resources.Get .).Resize "1200x" }}
+        {{ $image := (resources.Get .).Resize "1800x" }}
         {{ $imageThumbnail := $image.Resize "100x q25" | images.Filter (images.GaussianBlur 3) }}
         <img class="lazyload {{$imagePosition}}{{ if eq $.Params.portrait true }} portrait{{ end }}" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{- with $.Params.heading -}}{{ . }}{{ end }}">
       {{ end }}
     </div>
     <div class="block-content">
       <div class="container">
+        {{- with .Params.subheading -}}
+        <h2 class="block-feature-heading">{{ markdownify . }}</h2>
+        {{ end }}
         {{- with .Params.heading -}}
         <h3 class="block-feature-heading">{{ markdownify . }}</h3>
         {{ end }}

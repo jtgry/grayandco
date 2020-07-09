@@ -1,9 +1,9 @@
 <a class="skip-to-content" href="#page">Skip navigation</a>
 <nav class="main-nav">
-  <a href="/" class="nav-logo" alt="{{ .Site.Title }} Home"/>
+  <a href="{{ .Site.BaseURL }}" class="nav-logo" alt="{{ .Site.Title }} Home"/>
     {{ readFile "/static/images/logo-horizontal.svg" | safeHTML }}
   </a>
-  <a href="/" class="mobile-logo" alt="{{ .Site.Title }} Home"/>
+  <a href="{{ .Site.BaseURL }}" class="mobile-logo" alt="{{ .Site.Title }} Home"/>
     {{ readFile "/static/images/logo-badge.svg" | safeHTML }}
   </a>
   <ul class="nav-items">
@@ -12,10 +12,10 @@
       <button class="nav-item button border menu-button hidden" type="button" aria-label="Menu">Menu</button>
     </li>
     <li class="mobile">
-      <a data-scroll href="/#services" class="nav-item button border">Services</a>
+      <a data-scroll href="/#services" aria-label="Our Services" class="nav-item button border">Services</a>
     </li>
     <li class="mobile">
-      <a data-scroll href="/#contact" class="nav-item button shadow-sm">Contact</a>
+      <a data-scroll href="/#contact" aria-label="Contact Us" class="nav-item button shadow-sm">Contact</a>
     </li>
     
   </ul>

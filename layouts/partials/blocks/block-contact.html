@@ -2,7 +2,7 @@
   <div class="block-header mt2">
     <div class="container">
       {{ with .Params.subheading }}
-      <hr />
+      <hr class="hr-3" />
       <h2 class="color-brand">{{ markdownify . }}</h2>
       {{ end }}
       {{ with .Params.heading }}
@@ -33,7 +33,7 @@
               <textarea class="form-control" id="message" name="message"></textarea>
             </div>
           </div>
-          <div class="form-section">
+          <!--<div class="form-section">
             <h3 class="form-title">Wanna grab coffee and talk more?</h3>
             <div class="radio-button-group">
               <div class="radio-button-container">
@@ -49,7 +49,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
           <div class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </div>

@@ -1,11 +1,11 @@
 .block-container:nth-child(odd){
-  .block-wrapper{
+  .flex-wrapper{
     flex-direction: row-reverse;
   }
 }
 
 .block-image{
-  flex-basis: 50%;
+  flex-basis: 45%;
   margin-bottom: $spacing-unit;
   img{
     height: 40vh;
@@ -16,7 +16,7 @@
       min-height: 20em;
     }
     &.portrait{
-      height: 90vh;
+      height: 100vh;
       min-height: 40em;
     }
   }
@@ -33,6 +33,17 @@
   }
   li{
     font-size: 1rem;
+  }
+  h2{
+    color: $color-grey-light;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .7rem;
+    font-family: $alt-font-family;
+    font-weight: 700;
+    @media(min-width: $laptop){
+      margin-bottom: $spacing-unit / 2;
+    }
   }
   h3{
     font-size: 2.5rem;

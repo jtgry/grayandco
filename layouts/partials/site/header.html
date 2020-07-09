@@ -21,7 +21,7 @@
         {{ end }}
         <div class="cta-links">
         {{- if and .Params.button_url .Params.button_text -}}
-        <a data-scroll href="{{ .Params.button_url }}" class="button border"><span>{{ .Params.button_text }}</span></a>
+        <a data-scroll href="{{ .Params.button_url }}" type="button" class="button border"><span>{{ .Params.button_text }}</span></a>
         {{ end }}
         {{- if and .Params.more_url .Params.more_text -}}
         <a href="{{ .Params.more_url }}" class="cta-more">{{ .Params.more_text }} 

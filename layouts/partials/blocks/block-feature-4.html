@@ -17,10 +17,11 @@
   <div class="flex-wrapper">
     {{- if .Params.items -}}
       {{ range .Params.items }}
-      <div class="flex-item" href="{{ .link }}">
+      <div class="flex-item">
+        {{ $alt := .alt }}
         {{ with .image }}
         {{ $image := resources.Get . }}
-        <img src="{{ $image.RelPermalink }}" class="svg svg-grey">
+        <img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" class="svg svg-grey">
         {{ end }}
       </div>
       {{ end }}

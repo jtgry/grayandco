@@ -100,6 +100,17 @@ a{
   transform:rotate(90deg);
 
 }
+
+.hr-3{
+  border: 0;
+  height: 1.5px;
+  background: $color-grey-light;
+  width: 2em;
+  margin: 0 auto;
+  margin-bottom: $spacing-unit * 1.4;
+  transform:rotate(90deg);
+
+}
 img{
   width: 100%;
   max-width: 100%;
