@@ -191,6 +191,7 @@
 .skip-to-content{
   z-index: -1;
   margin-left: -10000px;
+  position: absolute;
 }
 a > * {
   pointer-events: none;
