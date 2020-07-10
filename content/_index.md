@@ -4,7 +4,7 @@ image: "/uploads/lauren-tyler-2.jpg"
 image_position: image-bottom
 heading: Your Local Digital Creative
 description: Husband and Wife creative team based in Alabama
-  that works to craft beautifully designed digital solutions.
+  that works to craft beautifully websites, branding, logos, and digital solutions.
 cta: We are a husband and wife creative team based in Alabama
   that crafts beautifully designed websites, branding, logos, and digital solutions for businesses, organizations,
   and other creatives.
@@ -18,8 +18,8 @@ blocks:
   subheading: Contact Us
 - template: block-feature-1
   heading: Our Services
-  subheading: What We Do
-  content: 'Here at <b>Gray & Co.</b>, we work with you throughout creating your entire
+  subheading: Design & Development
+  content: 'Here at <b>Gray & Co.</b> we work with you throughout creating your entire
     digital presence. We provide the end to end experience, from branding, logo, social
     media, photography, web design,  e-commerce, and much more to convey the right
     story to the right people for your business. '
@@ -139,7 +139,7 @@ blocks:
     more_text: ''
     more_url: ''
 - template: block-statement
-  heading: Gray & Co.
+  heading: Built in Alabama
   content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet
     all their creative & digital needs.
 
