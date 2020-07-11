@@ -7,7 +7,6 @@
       {{ end }}
       {{- with .Params.image -}}
         {{ $image := (resources.Get .).Resize "1800x" }}
-        {{ $image := $image | images.Filter images.Grayscale }}
         {{ $imageThumbnail := $image.Resize "100x q25" | images.Filter (images.GaussianBlur 3) }}
         <img class="lazyload {{$imagePosition}}{{ if eq $.Params.portrait true }} portrait{{ end }}" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{- with $.Params.heading -}}{{ . }}{{ end }}">
       {{ end }}
