@@ -1,15 +1,12 @@
 .block-feature-items{
   width: 100%;
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: $spacing-unit;
-  grid-column-gap: $spacing-unit * 2;
-  margin-bottom: $spacing-unit * 2;
-  @media(min-width: $laptop){
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    grid-row-gap: $spacing-unit * 2;
-    justify-items: center;
-    max-width: $content-wide;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
+  flex-direction: column;
+  @media(min-width: $tablet){
+    flex-direction: row;
   }
 
   .block-feature-item{
@@ -17,6 +14,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
+    flex-basis: 27%;
     .block-feature-item-media{
       width: 100%;
       height: 25vh;

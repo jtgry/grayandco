@@ -64,14 +64,14 @@ header{
           text-align: left;
         }
         h1{
-        font-size: 2rem;
+        font-size: 3.5rem;
         letter-spacing: -.1rem;
         margin-bottom: $spacing-unit / 2;
         line-height: 1;
         font-family: $header-font-family;
         color: $color-brand;
         @media(min-width: $tablet) {
-          font-size: 3rem;
+          font-size: 4rem;
         }
         @media(min-width: $laptop) {
           font-size: 5rem;

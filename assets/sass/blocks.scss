@@ -83,11 +83,15 @@
 }
 
 .flex-wrapper{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  
+  flex-direction: column;
+  @media(min-width: $tablet){
+    flex-direction: row;
+  }
   .flex-item{
     flex-basis: 25%;
     margin: $spacing-unit / 2;
