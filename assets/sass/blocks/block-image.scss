@@ -5,7 +5,10 @@
 }
 
 .block-image{
-  flex-basis: 45%;
+  flex-basis: 100%;
+  @media(min-width: $laptop) {
+    flex-basis: 45%;
+  }
   margin-bottom: $spacing-unit;
   img{
     height: 40vh;
@@ -31,8 +34,10 @@
 }
 
 .block-content{
-  flex-basis: 45%;
-  
+  flex-basis: 100%;
+  @media(min-width: $laptop) {
+    flex-basis: 45%;
+  }
   p{
     font-size: 1rem;
   }

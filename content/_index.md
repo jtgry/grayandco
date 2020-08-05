@@ -13,15 +13,12 @@ button_text: Let's Get Started!
 more_url: ''
 more_text: ''
 blocks:
-- template: block-contact
-  heading: Ready to start your project?
-  subheading: Contact Us
 - template: block-feature-1
-  heading: Our Services
-  subheading: Design & Development
+  heading: What We Do
+  subheading: Our Services
   content: 'Here at <b>Gray & Co.</b> we work with you throughout creating your entire
     digital presence. We provide the end to end experience, from branding, logo, social
-    media, photography, web design,  e-commerce, and much more to convey the right
+    media, photography, web design, e-commerce, and much more to convey the right
     story to the right people for your business. '
   items:
   - template: block-item
@@ -142,5 +139,7 @@ blocks:
   heading: Built in Alabama
   content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet
     all their creative & digital needs.
-
+- template: block-contact
+  heading: Ready to start your project?
+  subheading: Contact Us
 ---

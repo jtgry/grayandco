@@ -2,6 +2,7 @@
   width: 94%;
   margin: $spacing-unit 3%;
   display: block;
+  padding: $spacing-unit 0;
   @media (min-width: $tablet) {
     margin: $spacing-unit * 2 auto;
     max-width: $content-wide;
@@ -44,7 +45,12 @@
 .block-container{
   &:first-child{
     margin-top: -$spacing-unit * 2;
-    box-shadow: $box-shadow;
+    padding-top: $spacing-unit * 2;
+    background: $color-black;
+    @include fadeInUp(
+      $delay: 2.4s,
+      $duration: 1s
+    );
   }
 
 }
@@ -88,12 +94,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-  @media(min-width: $tablet){
-    flex-direction: row;
-  }
+
   .flex-item{
-    flex-basis: 25%;
+    flex-basis: 20%;
     margin: $spacing-unit / 2;
     @media(min-width: $laptop){
       flex-basis: 15%;

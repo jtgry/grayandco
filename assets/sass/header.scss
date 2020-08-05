@@ -7,7 +7,7 @@ header{
   justify-content: center;
   .hero{
     height: 90vh;
-    min-height: 20em;
+    min-height: 30em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -52,6 +52,7 @@ header{
     .cta{
     width: 94%;
     margin: 0 3%;
+    margin-top: 1em;
       .cta-content{        
         text-align: center;
 
@@ -60,7 +61,7 @@ header{
           text-align: left;
         }
         @media(min-width: $desktop) {
-          max-width: 70ch;
+          max-width: 80ch;
           text-align: left;
         }
         h1{
@@ -142,20 +143,6 @@ header{
           }
         }
         .button{
-          margin: 0;
-          margin-right: $spacing-unit / 2;
-          border-color: $color-brand;
-          color: $color-brand;
-          &:hover{
-            background: lighten($color-brand, 5%);
-            span{
-            color: $color-white;
-            }   
-          }
-          span{
-            font-size: 1rem;
-            color: $color-brand;
-          }
           @include fadeInUp(
             $delay: 1.6s,
             $duration: .8s

@@ -169,6 +169,7 @@
   border-radius: 50%;
   margin: $spacing-unit;
   padding: 0 .5em 1em;
+  font-size: 1rem;
   background: $color-white;
   line-height: 0;
   color: $color-brand;
@@ -179,8 +180,8 @@
   z-index: $height-top;
   box-shadow: $box-shadow;
   .svg-icon{
-    width: 2em;
-    height: 2em;
+    width: 1.6em;
+    height: 1.6em;
     transform: rotate(270deg);
     path{
       fill: $color-brand;

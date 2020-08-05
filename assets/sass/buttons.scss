@@ -20,7 +20,8 @@ button:focus {
   display: inline-block;
   border: 2px solid $color-white;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: .9rem;
+  letter-spacing: .2em;
   font-weight: 500;
   line-height: 1.4;
   margin: $spacing-unit / 2;
@@ -36,7 +37,7 @@ button:focus {
   transition: all .2s ease-out;
   span{
     color: $color-brand;
-    font-size: 1rem;
+    font-size: .9rem;
   }
   &:hover{
     color: darken($color-brand, 5%);
@@ -49,10 +50,10 @@ button:focus {
       color: $color-white;
     }
     &:hover{
-      background: $color-white;
-      color: $color-brand;
+      background: $color-black;
+      color: $color-white;
       span{
-        color: $color-brand;
+        color: $color-white;
       }
 
     }

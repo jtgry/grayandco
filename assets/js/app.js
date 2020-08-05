@@ -141,7 +141,6 @@ window.sr = ScrollReveal({
   sr.reveal('.svg', {origin: 'bottom', duration: 600, interval: 200, distance: '2em'});
   sr.reveal('.block-contact', {origin: 'bottom', duration: 600});
   sr.reveal('.block-cta', {origin: 'bottom', duration: 600});
-  sr.reveal('.block-header', {origin: 'bottom', duration: 600});
   sr.reveal('.site-footer', {origin: 'bottom', duration: 600});
 
 
