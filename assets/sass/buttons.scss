@@ -35,6 +35,9 @@ button:focus {
   position: relative;
   vertical-align: middle;
   transition: all .2s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
   span{
     color: $color-brand;
     font-size: .9rem;
