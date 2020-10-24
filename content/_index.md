@@ -19,7 +19,7 @@ blocks:
   content: 'Here at <b>Gray & Co.</b> we work with you throughout creating your entire
     digital presence. We provide the end to end experience, from branding, logo, social
     media, photography, web design, e-commerce, and much more to convey the right
-    story to the right people for your business. '
+    story to the right people for your business.'
   items:
   - template: block-item
     image: "/uploads/web-design.jpg"
