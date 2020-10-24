@@ -105,10 +105,7 @@
 }
 
 .svg-grey{
-
    filter: invert(.2);
-    
-
 }
 
 
@@ -126,6 +123,13 @@
 
 .image-bottom{
   object-position: 50% 50%;
+}
+.no-crop{
+  height: auto!important;
+  width: 100%!important;
+  min-height: auto!important;
+  object-fit: unset!important;
+  box-shadow: unset!important;
 }
 .text-small{
   p,li,ol{
@@ -225,6 +229,22 @@ button > * {
 }
 .background-brand{
   background: $color-brand;
+}
+.outer {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: (10 / 16) * 100%;
+  }
+  > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+  }
 }
 .vertical-scroll{
   display: flex;

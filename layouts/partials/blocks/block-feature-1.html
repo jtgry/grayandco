@@ -18,10 +18,10 @@
       {{ range .Params.items }}
       <div class="block-feature-item">
         {{ with .image }}
-        <div class="block-feature-item-media">
+        <div class="block-feature-item-media outer">
         {{ $image := (resources.Get .).Resize "1200x" }}
         {{ $imageThumbnail := $image.Resize "100x q25" | images.Filter (images.GaussianBlur 3) }}
-        <img class="lazyload" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+        <img class="lazyload inner" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
         </div>
         {{ end }}
         <div class="block-feature-item-content">

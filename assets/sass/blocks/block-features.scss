@@ -18,18 +18,12 @@
     margin-bottom: $spacing-unit;
     .block-feature-item-media{
       width: 100%;
-      height: 25vh;
-      min-height: 20em;
       margin-bottom: $spacing-unit / 2;
       overflow: hidden;
-      @media(min-width: $laptop){
-        min-height: 15em;
-      }
       img{
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: 50% 0;
 
       }
     }

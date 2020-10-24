@@ -92,6 +92,7 @@ blocks:
   heading: "Auburn University Credit Union"
   subheading: 'Featured Client'
   image: "/uploads/aucu-website.jpg"
+  nocrop: true
   content: "AUCU has been serving the Auburn area for nearly 60 years and just opened a branch in Montgomery as well! They are hometown credit union with a heart for local community and centered around excellent customer service. \n\n
 
     We absolutely loved being able to serve them to create their new website and refresh their branding! AUCU wanted a website that was responsive, fast, easy to navigate and accessible for all of their members. We were so happy to be able serve them to help them better serve you."
