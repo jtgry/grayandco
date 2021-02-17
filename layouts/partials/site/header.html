@@ -1,20 +1,12 @@
 <header>
   <div class="hero">
-    {{ with .Params.image }}
-    {{ $image := (resources.Get . ).Resize "2000x" }}
-    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
-    <div class="hero-image">
-      <img class="lazyload" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
-      <div class="img-overlay"></div>
-    </div>
-    {{ end }}
     <div class="cta">
       <div class="cta-content">
         {{- with .Params.heading -}}
         <h1>{{ . }}</h1>
         {{ end }}
         {{- with .Params.subheading -}}
-        <h2>{{ . }}</h2>
+        {{ . | markdownify }}
         {{ end }}
         {{- with .Params.cta -}}
         <p>{{ . | markdownify }}</p>
@@ -36,5 +28,12 @@
         </div>
       </div>
     </div>
+    {{ with .Params.image }}
+    {{ $image := (resources.Get . ).Resize "2000x" }}
+    {{ $imageThumbnail := $image.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
+    <div class="hero-image">
+      <img class="lazyload" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
   </div>
 </header>

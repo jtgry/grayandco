@@ -105,7 +105,12 @@
 }
 
 .svg-grey{
-   filter: invert(.2);
+  
+  svg{  
+    -webkit-filter: invert(.15); 
+    filter: invert(.15);
+  }
+
 }
 
 

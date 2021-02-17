@@ -16,9 +16,9 @@
     width: 100%;
     flex-basis: 27%;
     margin-bottom: $spacing-unit;
+
     .block-feature-item-media{
       width: 100%;
-      margin-bottom: $spacing-unit / 2;
       overflow: hidden;
       img{
         height: 100%;
@@ -31,6 +31,8 @@
       position: relative;
       z-index: $height-mid;
       max-width: $content-width;
+      
+      padding: $spacing-unit $spacing-unit / 2;
       .meta{
         display: flex;
       }

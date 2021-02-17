@@ -1,8 +1,9 @@
 ---
 title: Your Local Digital Creative
-image: "/uploads/lauren-tyler-2.jpg"
+image: ""
 image_position: image-bottom
-heading: Your Local Digital Creative
+heading: Gray & Company
+subheading: "## Beautifully Crafted,\n\n## Amazing Results"
 description: Husband and Wife creative team based in Alabama
   that works to craft beautifully websites, branding, logos, and digital solutions.
 cta: We are a husband and wife creative team based in Alabama

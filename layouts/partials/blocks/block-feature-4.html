@@ -21,7 +21,9 @@
         {{ $alt := .alt }}
         {{ with .image }}
         {{ $image := resources.Get . }}
-        <img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" class="svg svg-grey">
+        <a href="" class="svg-grey">
+        {{ $image.Content | safeHTML }}
+        </a>
         {{ end }}
       </div>
       {{ end }}

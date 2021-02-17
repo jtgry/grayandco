@@ -4,157 +4,134 @@ header{
   overflow: hidden;
   background: $color-white;
   display: flex;
-  justify-content: center;
+
+  
   .hero{
     height: 90vh;
-    min-height: 30em;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media(min-width: $laptop) {
-      height: 90vh;
-      min-height: 40em;
-    }
+    
+
     .hero-image{
       width: 100%;
       height: 100%;
+      margin-bottom: $spacing-unit;
       position: absolute;
-      @include fadeIn(
-        $delay: 2s,
-        $duration: .6s
-      );
-      
+
       img{
-      height: 100%;
-      height: 100vh;
-      width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      position: absolute;
-      box-shadow: $box-shadow;
-      object-position: 80% 50%;
-      @media(min-width: $laptop) {
-        object-position: 50% 50%;
-        }
-      }
-      .img-overlay{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: $color-white;
-        opacity: .8;
-        @media(min-width: $laptop) {
-          display: none;
-        }
+      overflow: hidden;
+
       }
     }
     .cta{
-    width: 94%;
-    margin: 0 3%;
-    margin-top: 1em;
-      .cta-content{        
-        text-align: center;
-
-        @media(min-width: $laptop) {
-          max-width: 50ch;
-          text-align: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100%;
+      width: 94%;
+      margin: 0 3%;
+      margin-top: 5em;
+      
+    .cta-content{        
+      text-align: center;
+      display: flex; 
+      align-items: center;
+      flex-direction: column;
+      h1{
+        font-size: .7rem;
+        font-family: $alt-font-family;
+        color: $color-grey-light;
+        margin-bottom: $spacing-unit;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+        font-weight: 700;
+        @include fadeIn(
+          $delay: 1.2s,
+          $duration: .6s
+        );
+        @media(min-width: $laptop)  {
+          letter-spacing: .3rem;
+          font-size: .7rem; 
         }
-        @media(min-width: $desktop) {
-          max-width: 80ch;
-          text-align: left;
-        }
-        h1{
-        font-size: 3.5rem;
+      }
+      h2{
+        font-size: 2.5rem;
         letter-spacing: -.1rem;
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: 0;
         line-height: 1;
         font-family: $header-font-family;
         color: $color-brand;
         @media(min-width: $tablet) {
-          font-size: 4rem;
+          font-size: 3rem;
         }
         @media(min-width: $laptop) {
           font-size: 5rem;
         }
         @media(min-width: $desktop) {
-          font-size: 7rem;
+          font-size: 5rem;
         }
-        @include fadeInLeft(
+        @include fadeInUp(
           $delay: 1s,
           $duration: .6s
         );
-        }
-        h2{
+      }
+      p{
+        font-size: .9rem;
+        color: $color-brand;
+        margin-top: $spacing-unit;
+        margin-bottom: $spacing-unit;
+        font-weight: 500;
+        @include fadeInUp(
+          $delay: 1.4s,
+          $duration: .6s
+        );
+        @media(min-width: $laptop) {
           font-size: 1rem;
-          color: $color-brand;
-          margin-bottom: $spacing-unit / 2;
-          text-transform: uppercase;
-          letter-spacing: .4rem;
-          font-weight: 700;
-          @include fadeIn(
-            $delay: 1.2s,
-            $duration: .6s
-          );
-          @media(min-width: $laptop)  {
-            letter-spacing: .3rem;
-            font-size: 1.4rem; 
-          }
         }
-        p{
+        @media(min-width: $desktop) {
+          font-size: 1.1rem;
+        }
+        @media(min-width: $laptop) {
+          max-width: 60ch;
+        }
+      }
+
+      .cta-links{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        @media(min-width: $laptop) {
+          flex-direction: row;
+        }
+        a{
+          color: $color-white;
           font-size: .9rem;
-          color: $color-brand;
-          margin-bottom: $spacing-unit;
-          font-weight: 500;
-          @include fadeInLeft(
-            $delay: 1.4s,
-            $duration: .6s
-          );
-          @media(min-width: $laptop) {
-            font-size: 1rem;
-          }
-          @media(min-width: $desktop) {
-            font-size: 1.1rem;
-          }
-        }
- 
-        .cta-links{
           display: flex;
-          justify-content: flex-start;
           align-items: center;
-          flex-direction: column;
-          @media(min-width: $laptop) {
-            flex-direction: row;
-          }
-          a{
-            color: $color-white;
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            margin-bottom: $spacing-unit / 2;
-          svg{
-            width: 1em;
-            height: 1em;
-            margin-top: .5em;
-            path{
-              fill: $color-white;
-              }
+          margin-bottom: $spacing-unit / 2;
+        svg{
+          width: 1em;
+          height: 1em;
+          margin-top: .5em;
+          path{
+            fill: $color-white;
             }
           }
         }
-        .button{
-          @include fadeInUp(
-            $delay: 1.6s,
-            $duration: .8s
-          );
-        }
-        .cta-more{
-          @include fadeInLeft(
-            $delay: 1.8s,
-            $duration: .8s
-          );
-        }
       }
+      .button{
+        @include fadeInUp(
+          $delay: 1.6s,
+          $duration: .8s
+        );
+      }
+      .cta-more{
+        @include fadeInLeft(
+          $delay: 1.8s,
+          $duration: .8s
+        );
+      }
+    }
     }
   }
 }

@@ -32,7 +32,7 @@
 
     }
     svg{
-      height: 3em;
+      height: 2.5em;
       path{
         stroke: $color-brand;
         fill: $color-brand;
@@ -113,9 +113,9 @@
         font-size: .6rem;
         letter-spacing: .1em;
         font-weight: 600;
-        color: $color-brand;
-        background: $color-white;
-        border-color: $color-white;
+        color: $color-white;
+        background: $color-black;
+        border-color: $color-black;
         @media(min-width: $tablet) {
           padding: 1.2em 1.6em;
           font-size: .7rem;
