@@ -13,7 +13,7 @@ blocks:
   - template: block-statement
     heading: Gray & Co.
     content: We believe at <b>Gray & Co.</b> that clients deserves a team that can meet all their creative & digital needs. 
-  - template: block-feature-4
+  - template: block-showcase
     heading: 
     subheading: Who we've worked with.
     items:

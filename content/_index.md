@@ -45,7 +45,7 @@ blocks:
       of your online presence and essential to customers understanding who you are. '
     more_text: ''
     more_url: ''
-- template: block-feature-4
+- template: block-showcase
   heading: Who we've worked with.
   subheading: Some cool folks that we know and love.
   items:
@@ -77,10 +77,7 @@ blocks:
     image: "/uploads/hartwell.svg"
     alt: "Hartlwell Records"
     link:
-  - template: feature-item
-    image: "/uploads/blessyourheart.svg"
-    alt: "Bless Your Heart"
-    link:
+
   - template: feature-item
     image: "/uploads/toulouse.svg"
     alt: "Fort Toulouse - Fort Jackson"

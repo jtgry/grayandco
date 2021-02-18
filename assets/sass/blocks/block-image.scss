@@ -35,6 +35,7 @@
 
 .block-content{
   flex-basis: 100%;
+  padding: $spacing-unit $spacing-unit / 2;
   @media(min-width: $laptop) {
     flex-basis: 45%;
   }
