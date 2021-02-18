@@ -1,6 +1,5 @@
 
-{{ $base := resources.Get "sass/app.scss" | toCSS }}
+{{ $base := resources.Get "sass/app.scss" | toCSS | minify | fingerprint }}
 
-
-<link rel="stylesheet" href="{{ $base.Permalink }}" />
+<link rel="stylesheet" href="{{ $base.RelPermalink }}" async/>
 
