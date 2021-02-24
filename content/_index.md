@@ -3,7 +3,7 @@ title: Your Local Digital Creative
 image: ""
 image_position: image-bottom
 heading: Gray & Company
-subheading: "## Beautifully Crafted,\n\n## Amazing Results"
+subheading: "## We Craft Beautiful\n\n## Websites & Brands"
 description: Husband and Wife creative team based in Alabama
   that works to craft beautifully websites, branding, logos, and digital solutions.
 cta: We are a husband and wife creative team based in Alabama
