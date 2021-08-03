@@ -1,4 +1,5 @@
 /spotify https://open.spotify.com/playlist/0FDaCJ8ePaeAeVsKwYJbXh 301!
+/baby https://giftful.com/wishlists/0rrNfPeDW09f3usRuRgd 301!
 {{- range $p := .Site.Pages -}}
 {{- range .Aliases }}
 {{ . }} {{ $p.RelPermalink -}}
