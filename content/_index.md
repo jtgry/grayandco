@@ -61,7 +61,7 @@ blocks:
     subheading: Some cool folks that we know and love.
     items:
       - template: feature-item
-        image: /assets/uploads/aucu.svg
+        image: /uploads/aucu.svg
         alt: Auburn University Credit Union
         link:
       - template: feature-item
