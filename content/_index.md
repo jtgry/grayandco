@@ -99,7 +99,7 @@ blocks:
   - template: block-image
     heading: Auburn University Credit Union
     subheading: Featured Client
-    image: /uploads/aucu-website.jpg
+    image: /assets/uploads/aucu-website.jpg
     nocrop: true
     content: >-
       AUCU has been serving the Auburn area for nearly 60 years and just opened
