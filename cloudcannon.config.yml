@@ -1,6 +1,6 @@
 paths:
   uploads: assets/uploads
-
+  static: assets
 _inputs:
   image:
     type: file
