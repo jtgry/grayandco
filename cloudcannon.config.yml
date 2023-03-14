@@ -1,2 +1,8 @@
 paths:
   uploads: assets/uploads
+
+_inputs:
+  image:
+    type: file
+    options:
+      uploads_dir: assets/uploads
