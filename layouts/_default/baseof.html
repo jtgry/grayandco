@@ -18,11 +18,10 @@
     {{ end }}
 
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
-
+    
+    <script src="https://cdn.usefathom.com/script.js" data-site="BSBJTXJR" defer></script>
   </head>
-  <!-- Fathom - beautiful, simple website analytics -->
-  <script src="https://hyena.wearegray.co/script.js" site="BSBJTXJR" defer></script>
-  <!-- / Fathom -->
+
   <body id="root">
     {{ block "alert" . }}{{ partial "site/alert.html" . }}{{ end }}
     {{ block "nav" . }}{{ partial "site/nav-preview.html" . }}{{ end }}
